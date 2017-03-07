@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model.action="http:///model/action.ecore" xmlns:model.core="http:///model/core.ecore" xmlns:model.entity="http:///model/entity.ecore" xmlns:model.javabean="http:///model/javabean.ecore" xmlns:model.module="http:///model/module.ecore" xmlns:model.scope="http:///model/scope.ecore" xmlns:model.screendesign="http:///model/screendesign.ecore" xmlns:model.screenflow="http:///model/screenflow.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
-  <model.module:ModuleRoot id="c591be66-541f-4cdf-84a0-482e171b28d7" logicalName="exampleTwo" name="Example2" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
-    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="3eddac91-a42f-4ce8-9cda-ee590771644d" logicalName="exampleTwoScreen flow" name="Example2ScreenFlow">
-      <theContainedElements xsi:type="model.core:DiagramElement" id="b34b669a-8b5e-4591-a4fb-2fc8d3a8759b" name="exampleTwoScreen flow"/>
+  <model.module:ModuleRoot id="c591be66-541f-4cdf-84a0-482e171b28d7" logicalName="Example2" name="Example2" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
+    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="3eddac91-a42f-4ce8-9cda-ee590771644d" logicalName="Example2Screen flow" name="Example2ScreenFlow">
+      <theContainedElements xsi:type="model.core:DiagramElement" id="b34b669a-8b5e-4591-a4fb-2fc8d3a8759b" name="Example2Screen flow"/>
       <theContainedElements xsi:type="model.screenflow:InitialNode" id="f401a578-d1e9-427d-adba-98f607deae78" logicalName="Entry Point" name="Z001">
         <theOutgoingTransitions id="cedd4682-557e-4e9f-adf7-6d6b733d40a5" logicalName="Go To List" name="T001" exceptionClass="" theActionSet="b99ce7f7-34e7-4757-9eba-20ce93be5403" theDestination="294ad614-6dfc-4523-b2ad-027d1f5b2d77"/>
       </theContainedElements>
@@ -75,7 +75,7 @@
       </theContainedElements>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="340cccb8-bfa7-40c5-abaf-1a26af150df7" logicalName="Action form" name="ActionForm" kind="ActionForm">
-      <theContainedElements xsi:type="model.scope:ActionFormClass" id="582e6dde-fa8b-44ec-b729-4938d3a2190b" logicalName="exampleTwoForm" name="Example2Form" isOptimizedActionForm="true" isRequestScope="true">
+      <theContainedElements xsi:type="model.scope:ActionFormClass" id="582e6dde-fa8b-44ec-b729-4938d3a2190b" logicalName="Example2Form" name="Example2Form" isOptimizedActionForm="true" isRequestScope="true">
         <theContainedElements xsi:type="model.scope:ActionFormField" id="0bab0d6b-f40c-4892-b24e-055360600d55" logicalName="Item Name" name="itemName" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
         <theContainedElements xsi:type="model.scope:ActionFormField" id="eee1ec0b-dfa8-4daa-8343-ca231c702507" logicalName="Item Id" name="itemId" aliasType="Integer" type="Integer"/>
       </theContainedElements>

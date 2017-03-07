@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model.action="http:///model/action.ecore" xmlns:model.core="http:///model/core.ecore" xmlns:model.module="http:///model/module.ecore" xmlns:model.scope="http:///model/scope.ecore" xmlns:model.screenflow="http:///model/screenflow.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
-  <model.module:ModuleRoot id="d96e1b76-377a-4567-bf37-7f3f10c421de" logicalName="example3" name="example3" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
-    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="0dfa39b8-2301-445a-a0e4-60a2069ce65a" logicalName="example3Screen flow" name="example3ScreenFlow">
-      <theContainedElements xsi:type="model.core:DiagramElement" id="a56fd84b-6451-4f0b-94e9-c992795f9dfb" name="example3Screen flow"/>
+  <model.module:ModuleRoot id="d96e1b76-377a-4567-bf37-7f3f10c421de" logicalName="Example3" name="Example3" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
+    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="0dfa39b8-2301-445a-a0e4-60a2069ce65a" logicalName="Example3Screen flow" name="Example3ScreenFlow">
+      <theContainedElements xsi:type="model.core:DiagramElement" id="a56fd84b-6451-4f0b-94e9-c992795f9dfb" name="Example3Screen flow"/>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="3d58a677-7afa-439a-9b84-404475dbbf67" logicalName="Action" name="ActionDefinition" kind="ActionDefinition"/>
     <theContainedElements xsi:type="model.core:DesignPhase" id="c5b9a327-750e-4ef9-8045-5557bcde70d2" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition"/>
     <theContainedElements xsi:type="model.core:DesignPhase" id="362f364d-f5c3-4626-b514-8ab9966b70bb" logicalName="Action form" name="ActionForm" kind="ActionForm">
-      <theContainedElements xsi:type="model.scope:ActionFormClass" id="22b0a2c9-1ef8-48bd-b2ac-030cc903ff4e" logicalName="example3Form" name="Example3Form" isOptimizedActionForm="true" isRequestScope="true"/>
+      <theContainedElements xsi:type="model.scope:ActionFormClass" id="22b0a2c9-1ef8-48bd-b2ac-030cc903ff4e" logicalName="Example3Form" name="Example3Form" isOptimizedActionForm="true" isRequestScope="true"/>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="35f3c778-f29c-4994-adc9-511dfa9c7fcf" logicalName="Session" name="Session" kind="SessionDefinition">
       <theContainedElements xsi:type="model.scope:Session" id="8bf8cc7e-866d-423a-a6a0-d349561e729f" logicalName="Session list" name="Session"/>
@@ -21,10 +21,10 @@
     <theContainedElements xsi:type="model.core:DesignPhase" id="a1c4cc1d-c18e-451c-bfc5-37fc74f56ee9" logicalName="Java bean" name="JavaBeanDefinition" kind="JavaBean"/>
     <theContainedElements xsi:type="model.core:DesignPhase" id="69564a31-dc03-420f-a05a-0991eceacf08" logicalName="DTO class" name="DTOClass" kind="DTOClass"/>
     <theContainedElements xsi:type="model.core:DesignPhase" id="2560fbd3-ab86-4baa-a853-e69a660cf230" logicalName="Controller" name="Controller" kind="Controller">
-      <theContainedElements xsi:type="model.action:Controller" id="940b1da1-7cd1-46cf-ad86-b4e842956aca" name="example3Controller" theRelatedService="86c6c39b-0a10-4ba1-81c6-89f75d6ce877"/>
+      <theContainedElements xsi:type="model.action:Controller" id="940b1da1-7cd1-46cf-ad86-b4e842956aca" name="Example3Controller" theRelatedService="86c6c39b-0a10-4ba1-81c6-89f75d6ce877"/>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="a6fa1397-84a4-44c7-b8ef-a0cb80e6d108" logicalName="Service" name="Service" kind="Service">
-      <theContainedElements xsi:type="model.action:Service" id="86c6c39b-0a10-4ba1-81c6-89f75d6ce877" name="example3Service"/>
+      <theContainedElements xsi:type="model.action:Service" id="86c6c39b-0a10-4ba1-81c6-89f75d6ce877" name="Example3Service"/>
     </theContainedElements>
     <theProjectRoot href="tri.trip#1c3e6e59-2391-4212-b58f-609ea058ee8f" name="TriApp" logicalName="TriApplication"/>
   </model.module:ModuleRoot>

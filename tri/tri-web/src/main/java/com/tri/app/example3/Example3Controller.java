@@ -7,6 +7,7 @@
 
 package com.tri.app.example3;
 
+import javax.annotation.Generated;
 import com.tri.app.TriAppHelper;
 import javax.inject.Inject;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,7 @@ import org.springframework.stereotype.Controller;
  * The Controller class of example3.
  */
 @Controller
-@RequestMapping("example3")
+@RequestMapping("Example3")
 public class Example3Controller {
 
     @Inject

@@ -10,7 +10,7 @@ package com.tri.app.example1;
 import java.io.Serializable;
 
 /** 
- * exampleOneForm <br>
+ * Example1Form <br>
  *  
  */
 public class Example1Form implements Serializable {
