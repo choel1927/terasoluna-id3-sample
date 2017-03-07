@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model.action="http:///model/action.ecore" xmlns:model.core="http:///model/core.ecore" xmlns:model.module="http:///model/module.ecore" xmlns:model.scope="http:///model/scope.ecore" xmlns:model.screendesign="http:///model/screendesign.ecore" xmlns:model.screenflow="http:///model/screenflow.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <model.module:ModuleRoot id="68db8974-8eb1-4c78-8e6a-bf9448d0e949" logicalName="exampleOne" name="Example1" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
+    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="2be575fe-64c0-412e-aebe-91b26eb26a8d" logicalName="exampleOneScreen flow" name="Example1ScreenFlow">
+      <theContainedElements xsi:type="model.core:DiagramElement" id="3cfaa4fb-b64b-449a-9117-c61219aafdf9" name="exampleOneScreen flow"/>
+      <theContainedElements xsi:type="model.screenflow:InitialNode" id="5250dbcc-4870-47bb-ad7a-deaa1e216ad6" logicalName="Entry Point" name="Z001">
+        <theOutgoingTransitions id="180415b3-c6f4-4920-a8c9-456645616396" logicalName="Enter To Input Page" name="T001" exceptionClass="" theActionSet="f137975f-e4aa-4e8a-b649-c5c53c70f00f" theDestination="b33f8b6f-e68f-4463-8018-29d54c0406ac"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="b33f8b6f-e68f-4463-8018-29d54c0406ac" logicalName="Input Form" name="S001" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="0e3624ac-8099-4055-99a8-f90a7f35182d" logicalName="Input Form" name="F001">
+          <theContainedElements xsi:type="model.screendesign:ScreenItem" id="edc972fe-00a3-4a89-bc42-ded25e781074" logicalName="Input Text" name="inputText" theRelatedScopeField="8a63ca2b-5d48-4701-a960-1ef60cf7a2b3" appearanceType="TEXT" triTagName="div" labelTagName="label">
+            <thePathOfBeanFieldUsages id="25683937-2937-4737-b377-66d9926dc5e1" theField="8a63ca2b-5d48-4701-a960-1ef60cf7a2b3"/>
+          </theContainedElements>
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="533d68d9-709f-471a-90a3-b07b7cd7f5c6" logicalName="Submit" name="submit" theRelatedTransition="0a6d86fc-4b0d-4701-a3de-522675019370" triTagName="div">
+            <thePageLinkTotal id="609efbd2-0698-445c-a49b-59449a6a2635"/>
+            <thePageLinkIndex id="ac649fb1-663a-4aaa-b4e9-5ecd1fc4daee"/>
+            <thePageLinkRow id="2fcee6bb-8989-41ba-9881-1501f5067d9c"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theOutgoingTransitions id="0a6d86fc-4b0d-4701-a3de-522675019370" logicalName="To Output Page" name="T002" exceptionClass="" theActionSet="70925faf-e640-418d-b2d9-637b72f94a92" theDestination="b00164d0-be26-4d24-8265-b0da4247ab5c"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="b00164d0-be26-4d24-8265-b0da4247ab5c" logicalName="Output Form" name="S002" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="da52b77e-ce95-4e03-98ce-de7f604569c1" logicalName="Output Form" name="F002">
+          <theContainedElements xsi:type="model.screendesign:ScreenItem" id="479971e8-cd14-42df-8496-b0e7e6a94ed9" logicalName="Input Text" name="inputText" theRelatedScopeField="8a63ca2b-5d48-4701-a960-1ef60cf7a2b3" triTagName="div" labelTagName="label">
+            <thePathOfBeanFieldUsages id="eb099f6d-3740-4007-b942-40ee8a008e8e" theField="8a63ca2b-5d48-4701-a960-1ef60cf7a2b3"/>
+          </theContainedElements>
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="9ba74b55-74e0-440d-abd2-5605b7b873ca" logicalName="Back" name="back" connectionType="NORMAL_LINK" theRelatedTransition="666645c4-b207-4309-8d48-e8cf9d7d81d2" triTagName="div">
+            <thePageLinkTotal id="f69f77f9-7a39-4c09-a618-cf1db5c52425"/>
+            <thePageLinkIndex id="ef364a3d-6361-4994-9e0a-6eb1b9a6955b"/>
+            <thePageLinkRow id="76687cbe-7e91-4746-b7f1-eb3f1c276f5c"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theOutgoingTransitions id="666645c4-b207-4309-8d48-e8cf9d7d81d2" logicalName="Back To Input Page" name="T003" exceptionClass="" theActionSet="f137975f-e4aa-4e8a-b649-c5c53c70f00f" theDestination="b33f8b6f-e68f-4463-8018-29d54c0406ac"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="188c1e59-073f-493d-90bf-0ab919295fdd" logicalName="Action" name="ActionDefinition" kind="ActionDefinition">
+      <theContainedElements xsi:type="model.action:Action" id="f137975f-e4aa-4e8a-b649-c5c53c70f00f" logicalName="Input Page" name="input" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" requestPath="input" viewName="" theOwnerController="dd62edd9-9dcc-4e37-bf46-40dabc6a5f83">
+        <httpMethod>GET</httpMethod>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:Action" id="70925faf-e640-418d-b2d9-637b72f94a92" logicalName="Output Page" name="output" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" requestPath="output" viewName="" theOwnerController="dd62edd9-9dcc-4e37-bf46-40dabc6a5f83">
+        <httpMethod>POST</httpMethod>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="98090af8-41ed-43f9-b721-8eba8db068d2" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="d8334682-77e7-4286-b877-ab04da7a9bdd" logicalName="Action form" name="ActionForm" kind="ActionForm">
+      <theContainedElements xsi:type="model.scope:ActionFormClass" id="e9205cf6-8832-440f-bd0c-18487e281979" logicalName="exampleOneForm" name="Example1Form" isOptimizedActionForm="true" isRequestScope="true">
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="8a63ca2b-5d48-4701-a960-1ef60cf7a2b3" logicalName="Input Text" name="inputText" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="4a6b89db-6751-45fb-820b-3b4b501cc5df" logicalName="Session" name="Session" kind="SessionDefinition">
+      <theContainedElements xsi:type="model.scope:Session" id="bc91f2d0-2f3d-430c-8282-33024be55c5d" logicalName="Session list" name="Session"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="fa4eedfa-6c95-4e51-99cb-f3a2f1d7555e" logicalName="Request" name="Request" kind="RequestDefinition">
+      <theContainedElements xsi:type="model.scope:Request" id="ff644ef7-2bb1-45b2-a0e8-bf54afee9c73" logicalName="Request list" name="Request"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="71578c4c-64f4-422e-8111-0bf55e2082c3" logicalName="Correlation item validation class" name="MultiFieldValidator" kind="MultiFieldValidator"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="e2777492-1fcc-4f44-85f9-b32bf8e0b77b" logicalName="Codelist" name="CodeList" kind="CodeList"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="a329458a-53e5-4ace-90fb-5fcb634494db" logicalName="Message" name="MessageDefinition" kind="MessageDefinition"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="00a8c8e5-0d46-4ec7-9f0c-ce284b774f33" logicalName="Java bean" name="JavaBeanDefinition" kind="JavaBean"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="6d7644b4-7271-478d-99e8-d42142da2ebc" logicalName="DTO class" name="DTOClass" kind="DTOClass"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="2c5a5d91-269e-4395-9b43-cdb8b01fc5e8" logicalName="Controller" name="Controller" kind="Controller">
+      <theContainedElements xsi:type="model.action:Controller" id="dd62edd9-9dcc-4e37-bf46-40dabc6a5f83" name="Example1Controller" theOwnedAction="f137975f-e4aa-4e8a-b649-c5c53c70f00f 70925faf-e640-418d-b2d9-637b72f94a92" theRelatedService="f67fddfa-9194-49a3-8f60-b51f3a8c1f12"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="6d83bee3-0b1b-4bfe-8c2d-95d85b460aaf" logicalName="Service" name="Service" kind="Service">
+      <theContainedElements xsi:type="model.action:Service" id="f67fddfa-9194-49a3-8f60-b51f3a8c1f12" name="Example1Service"/>
+    </theContainedElements>
+    <theProjectRoot href="tri.trip#1c3e6e59-2391-4212-b58f-609ea058ee8f" name="TriApp" logicalName="TriApplication"/>
+  </model.module:ModuleRoot>
+  <notation:Diagram type="IDE3_ModelID" element="2be575fe-64c0-412e-aebe-91b26eb26a8d" measurementUnit="Pixel">
+    <children xsi:type="notation:Shape" type="2005" element="5250dbcc-4870-47bb-ad7a-deaa1e216ad6" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5005">
+        <layoutConstraint xsi:type="notation:Location" x="60" y="20"/>
+      </children>
+      <layoutConstraint xsi:type="notation:Bounds" x="204" y="72"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="b33f8b6f-e68f-4463-8018-29d54c0406ac" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="120" y="240" width="211"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="b00164d0-be26-4d24-8265-b0da4247ab5c" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="564" y="240" width="217"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges xsi:type="notation:Connector" type="4001" element="180415b3-c6f4-4920-a8c9-456645616396" source="/1/@children.0" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-37" y="88"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-10" y="116"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[6, 20, 0, -136]$[7, 148, 1, -8]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5213270142180095,0.10666666666666667)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="0a6d86fc-4b0d-4701-a3de-522675019370" source="/1/@children.1" target="/1/@children.2">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-4" y="44"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-1" y="71"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[26, 0, -161, 0]$[163, 2, -24, 2]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.8767772511848341,0.6266666666666667)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.11059907834101383,0.6266666666666667)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="666645c4-b207-4309-8d48-e8cf9d7d81d2" source="/1/@children.2" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="1" y="61"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-7" y="83"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-8, 8, 241, 0]$[-241, 6, 8, -2]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.03686635944700461,0.17333333333333334)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9620853080568721,0.28)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

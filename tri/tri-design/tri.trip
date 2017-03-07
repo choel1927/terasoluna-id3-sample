@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model.action="http:///model/action.ecore" xmlns:model.core="http:///model/core.ecore" xmlns:model.scope="http:///model/scope.ecore" xmlns:model.screendesign="http:///model/screendesign.ecore" xmlns:model.screenflow="http:///model/screenflow.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <model.core:ProjectRoot id="1c3e6e59-2391-4212-b58f-609ea058ee8f" logicalName="TriApplication" name="TriApp" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java" basePackageName="com.tri" dynamicWebProject="tri-web" entityTypeFilePath="/tri-web/config/EntityType.properties" forwardConfigFilePath="/tri-web/config/ForwardConfig.properties" isMultiProject="true" jspCharacterEncoding="UTF-8" jspTemplateFilePath="/tri-web/config/PageTemplate.jsp" jspTemplateFilePathForMobile="/tri-web/config/sp/PageTemplate.jsp" prefixSuffixConfigurationFilePath="/tri-web/config/PrefixSuffix_Configuration.xml" validationCheckRuleFilePath="/tri-web/config/ValidationCheckRule.xml" webContentFolder="src/main/webapp" webDisplayName="tri-web" FieldTypeConfigurationFilePath="/tri-web/config/FieldTypeConfig.xml">
+    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="223d4433-7791-401d-bae2-a53dee4b98c4" logicalName="TriApplicationScreen flow" name="TriAppScreenFlow">
+      <theContainedElements xsi:type="model.core:DiagramElement" id="7c1c493b-0b98-4e34-afc1-ebae21603265" name="TriApplicationScreen flow"/>
+      <theContainedElements xsi:type="model.screenflow:InitialNode" id="a538cfc6-01f6-40dd-b77a-50b9336105d3" logicalName="Show Menu" name="UC100">
+        <theOutgoingTransitions id="a36ff61e-573a-4e83-b838-1847a13438cd" logicalName="Url Access" name="urlAccess" exceptionClass="" theActionSet="ec283a7e-4bb4-4876-8a1a-817010a16ff0" theDestination="40a1bb6a-c92b-4fb7-aab7-7480a2098363"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="40a1bb6a-c92b-4fb7-aab7-7480a2098363" logicalName="Menu Page" name="menuPage" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="2796951d-a188-4cc5-8caa-b372c6ecb9bf" logicalName="Menu Form" name="menuForm">
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="9354a395-26d6-4c4a-b18b-d38d8ee66581" logicalName="Todo Management Button" name="todoManagementButton" connectionType="NORMAL_LINK" theRelatedTransition="bf5a9e37-d96e-4cde-9241-e9de782afa6a" triTagName="div">
+            <thePageLinkTotal id="f8fe8b3a-03e1-4d94-a175-1411b4ad56f0"/>
+            <thePageLinkIndex id="b27ef958-b642-41eb-bb2f-bb1f936b70a4"/>
+            <thePageLinkRow id="7aee52b4-8779-4eda-9e78-ccf689af27ea"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theOutgoingTransitions id="bf5a9e37-d96e-4cde-9241-e9de782afa6a" logicalName="Todo Management Clicked" name="todoManagementClicked" exceptionClass="" theDestination="635976c7-f624-4f53-acf7-0fe3d5078103"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:FinalNode" id="635976c7-f624-4f53-acf7-0fe3d5078103" logicalName="Go To Todo Management" name="UC200" kind="START_ANOTHER_FLOW">
+        <theNextInitialNode href="todoManagement.trim#973f1cc0-2850-493f-991a-2316b6850c4f" name="UC200" logicalName="Todo Management"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="9e10af18-5687-4934-8fd9-3c2c5e44cfb8" logicalName="Action" name="ActionDefinition" kind="ActionDefinition">
+      <theContainedElements xsi:type="model.action:Action" id="ec283a7e-4bb4-4876-8a1a-817010a16ff0" logicalName="Show Menu" name="showMenu" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" requestPath="menu" viewName="" theOwnerController="d8d7fa64-54ef-4ec0-9663-95d1c2f200d4">
+        <httpMethod>GET</httpMethod>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="93ca0650-0d7c-42c8-bba3-3a4af7360089" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="26545f31-9890-4220-8a0c-c6b72b49f3d8" logicalName="Action form" name="ActionForm" kind="ActionForm">
+      <theContainedElements xsi:type="model.scope:ActionFormClass" id="cf94551e-16f7-4f38-a392-b604e798859b" logicalName="TriApplicationForm" name="TriAppForm" isOptimizedActionForm="true" isRequestScope="true"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="b7333968-08d4-4017-afb6-82117ec95e7f" logicalName="Session" name="Session" kind="SessionDefinition">
+      <theContainedElements xsi:type="model.scope:Session" id="d1e7d3bc-ae09-447b-a766-275bc794f8c4" logicalName="Session list" name="Session"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="a46b5550-ca51-453b-8b27-86cc3c7fd3a3" logicalName="Request" name="Request" kind="RequestDefinition">
+      <theContainedElements xsi:type="model.scope:Request" id="4afec9c3-d967-42e0-ade6-2597a7eacc42" logicalName="Request list" name="Request"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="57b7cd0c-4b0a-47fd-a356-c740d75c58ab" logicalName="Correlation item validation class" name="MultiFieldValidator" kind="MultiFieldValidator"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="91b6a174-3c12-4a54-b5df-3dc19822bb57" logicalName="Codelist" name="CodeList" kind="CodeList"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="90e16034-e052-4eca-8686-ca24d2019943" logicalName="Message" name="MessageDefinition" kind="MessageDefinition"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="63b729d7-637a-4f86-ab62-d8afeb280ff8" logicalName="Java bean" name="JavaBeanDefinition" kind="JavaBean"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="f103b9b5-5d12-4fe9-a259-1e2448442630" logicalName="DTO class" name="DTOClass" kind="DTOClass"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="ad9e5105-16c0-4c70-9f57-71f450fb5889" logicalName="Entity" name="Entity" kind="Entity"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="dc27841b-03c8-4776-82d9-b50b60b3110c" logicalName="Controller" name="Controller" kind="Controller">
+      <theContainedElements xsi:type="model.action:Controller" id="d8d7fa64-54ef-4ec0-9663-95d1c2f200d4" name="TriAppController" theOwnedAction="ec283a7e-4bb4-4876-8a1a-817010a16ff0" theRelatedService="9679be40-9096-4389-b882-5182a4491870"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="e35365f7-ff92-4090-8e4c-0b2736a86e79" logicalName="Service" name="Service" kind="Service">
+      <theContainedElements xsi:type="model.action:Service" id="9679be40-9096-4389-b882-5182a4491870" name="TriAppService"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="427a0315-9569-426d-80dc-0050b4aea12d" logicalName="Helper" name="Helper" kind="Helper">
+      <theContainedElements xsi:type="model.action:Helper" id="6a4d16f0-c1bf-4c8c-a183-96e792b0cb76" name="TriAppHelper"/>
+    </theContainedElements>
+    <projectFeatures>FW5</projectFeatures>
+  </model.core:ProjectRoot>
+  <notation:Diagram type="IDE3_ModelID" element="223d4433-7791-401d-bae2-a53dee4b98c4" measurementUnit="Pixel">
+    <children xsi:type="notation:Shape" type="2005" element="a538cfc6-01f6-40dd-b77a-50b9336105d3">
+      <children xsi:type="notation:DecorationNode" type="5005">
+        <layoutConstraint xsi:type="notation:Location" x="48" y="12"/>
+      </children>
+      <layoutConstraint xsi:type="notation:Bounds" x="192" y="60"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="40a1bb6a-c92b-4fb7-aab7-7480a2098363">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="96" y="192" width="253"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2006" element="635976c7-f624-4f53-acf7-0fe3d5078103">
+      <children xsi:type="notation:DecorationNode" type="5006">
+        <layoutConstraint xsi:type="notation:Location" x="48" y="12"/>
+      </children>
+      <layoutConstraint xsi:type="notation:Bounds" x="192" y="372"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges xsi:type="notation:Connector" type="4001" element="a36ff61e-573a-4e83-b838-1847a13438cd" source="/1/@children.0" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-31" y="-87"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-4" y="-114"/>
+      </children>
+      <styles xsi:type="notation:FontStyle"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[2, 20, 8, -141]$[2, 199, 8, 38]"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="bf5a9e37-d96e-4cde-9241-e9de782afa6a" source="/1/@children.1" target="/1/@children.2">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-1" y="-166"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="8" y="105"/>
+      </children>
+      <styles xsi:type="notation:FontStyle"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-4, 38, 2, -89]$[-4, 147, 2, 20]"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

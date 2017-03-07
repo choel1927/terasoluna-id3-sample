@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model.action="http:///model/action.ecore" xmlns:model.core="http:///model/core.ecore" xmlns:model.entity="http:///model/entity.ecore" xmlns:model.javabean="http:///model/javabean.ecore" xmlns:model.module="http:///model/module.ecore" xmlns:model.scope="http:///model/scope.ecore" xmlns:model.screendesign="http:///model/screendesign.ecore" xmlns:model.screenflow="http:///model/screenflow.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <model.module:ModuleRoot id="e3d82490-fc54-4460-a684-f1e931255a55" logicalName="todo-management" name="todoManagement" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
+    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="447c91cc-66a6-47c7-939c-66fec74a8bea" logicalName="todo-managementScreen flow" name="todoManagementScreenFlow">
+      <theContainedElements xsi:type="model.core:DiagramElement" id="b723c972-b084-42e5-8e75-8e5159dd28fe" name="todo-managementScreen flow"/>
+      <theContainedElements xsi:type="model.screenflow:InitialNode" id="973f1cc0-2850-493f-991a-2316b6850c4f" logicalName="Todo Management" name="UC200">
+        <theOutgoingTransitions id="cb562fe1-2150-4bd7-b56a-2ac40718bb39" logicalName="Enter Todo Management" name="enter" exceptionClass="" theActionSet="ee4d238e-02c3-407b-a12c-bb268b5d07e6" theDestination="2d851a9a-e7cb-49a2-9853-aad2093456b0"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="2d851a9a-e7cb-49a2-9853-aad2093456b0" logicalName="Todo Management Page" name="todoManagementPage" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="eff2a64d-2b09-40e5-8650-31877b7680b5" logicalName="Add Todo Item" name="addTodoItem">
+          <theContainedElements xsi:type="model.screendesign:ScreenItem" id="ee302754-b6bb-4177-9536-fbb34358f9cd" logicalName="Title" name="title" theRelatedScopeField="1709d3d7-4d9a-4be9-9d1d-f00f3aa0f9c1" appearanceType="TEXT" triTagName="div" labelTagName="label">
+            <thePathOfBeanFieldUsages id="6317ec3d-71b2-491e-affc-090d7ff79fd0" theField="1709d3d7-4d9a-4be9-9d1d-f00f3aa0f9c1"/>
+          </theContainedElements>
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="91e28bdd-43fe-4aa6-a8b6-211be6265cf7" logicalName="Add" name="add" theRelatedTransition="54f32689-9ad8-4e9a-a404-417d8a548919" triTagName="div">
+            <thePageLinkTotal id="0ca42d44-bdff-4f3a-af2b-c6164697edd7"/>
+            <thePageLinkIndex id="fc657420-e79d-4d42-aebc-b4796dcc49d3"/>
+            <thePageLinkRow id="fc813346-59ad-45ba-9ed4-970052e60cfa"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theContainedElements xsi:type="model.screendesign:Form" id="01f71f22-3fd8-4ab4-8559-0737389eb727" logicalName="Todo Item List" name="todoItemList">
+          <theContainedElements xsi:type="model.screendesign:ScreenItemGroup" id="7737d9f0-d072-4b97-84ba-1ecb3ce83a82" logicalName="Todos" name="todos" theRelatedScopeField="38efc6e1-ae37-4a71-8fb2-628544da6ea5">
+            <theContainedElements xsi:type="model.screendesign:ScreenItem" id="f579ab81-b79a-4259-a136-de2b785456c6" logicalName="Todo Id" name="todoId" theRelatedScopeField="38efc6e1-ae37-4a71-8fb2-628544da6ea5" labelTagName="th" controlWrapperTagName="td">
+              <thePathOfBeanFieldUsages id="cc019f9b-8e0d-43cd-8919-aaeb70a77dbb" theField="38efc6e1-ae37-4a71-8fb2-628544da6ea5"/>
+              <thePathOfBeanFieldUsages id="c1dddc80-02db-400b-b032-3cc1e7ca4bd6" theField="0aedeaea-93be-48fa-abb6-3d3c91e3c66e"/>
+            </theContainedElements>
+            <theContainedElements xsi:type="model.screendesign:ScreenItem" id="e5425842-fd23-4dd1-b11e-46f942a826cc" logicalName="Title" name="title" theRelatedScopeField="38efc6e1-ae37-4a71-8fb2-628544da6ea5" labelTagName="th" controlWrapperTagName="td">
+              <thePathOfBeanFieldUsages id="4f656cc9-a20c-4420-9e0c-e5b557462e96" theField="38efc6e1-ae37-4a71-8fb2-628544da6ea5"/>
+              <thePathOfBeanFieldUsages id="16f4dfa7-7602-424d-a3f2-ef282fd0875f" theField="4d3eae92-6585-45d7-92e0-b88f6893ba11"/>
+            </theContainedElements>
+            <theContainedElements xsi:type="model.screendesign:ButtonLink" id="9e05e0c1-4aa0-4d79-9087-591f6ba86f9a" logicalName="Finish" name="finish" connectionType="TABLE_ROW_LINK" theRelatedTransition="09fade02-1be3-4918-8a4e-d7d1102e3c08" theParamProperty="0aedeaea-93be-48fa-abb6-3d3c91e3c66e" theParamId="5c780207-38d4-4dc2-8635-528b0535eaf1" controlWrapperTagName="td">
+              <thePageLinkTotal id="8f85ff77-acd7-4b88-bebc-69d29de1070e"/>
+              <thePageLinkIndex id="c86e7cd2-ce14-48d4-851f-8b313edb8f6d"/>
+              <thePageLinkRow id="7486be46-3691-4ee2-9d98-545717a30392"/>
+            </theContainedElements>
+            <thePathOfBeanFieldUsages id="f24560a1-c52f-4072-b2eb-448437120791" theField="38efc6e1-ae37-4a71-8fb2-628544da6ea5"/>
+          </theContainedElements>
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="703e812a-50dd-4f64-8083-69fd3df8a962" logicalName="Pagination Link" name="paginationLink" connectionType="PAGE_LINK" theRelatedTransition="8ad0697e-ea45-4834-ab67-f6a7ab966cdf" thePageLinkTable="7737d9f0-d072-4b97-84ba-1ecb3ce83a82" relatedScopeField="795e7491-950d-496a-93db-bed0242d0018" triTagName="div">
+            <thePageLinkTotal id="8c4c4058-9d9c-497c-a6cb-48cc7a58b56d" theRelatedScopeField="3bc752c0-5f90-4bd1-97da-8f3e463a419c">
+              <thePathOfBeanFieldUsages id="846afcc4-a33e-4772-b7e2-355ae448e840" theField="3bc752c0-5f90-4bd1-97da-8f3e463a419c"/>
+            </thePageLinkTotal>
+            <thePageLinkIndex id="fa04aca3-0ad6-410e-9fcd-92ce1eb1355b"/>
+            <thePageLinkRow id="c05b3a1f-78f9-4ea9-a773-ef97de0e6fa0"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theOutgoingTransitions id="54f32689-9ad8-4e9a-a404-417d8a548919" logicalName="Add Button Clicked" name="addButtonClicked" exceptionClass="" theActionSet="db5d2320-4d72-46f0-b58e-0b762eb9db28 ee4d238e-02c3-407b-a12c-bb268b5d07e6" theDestination="2d851a9a-e7cb-49a2-9853-aad2093456b0"/>
+        <theOutgoingTransitions id="09fade02-1be3-4918-8a4e-d7d1102e3c08" logicalName="Finish Button Clicked" name="finishButtonClicked" exceptionClass="" theActionSet="22c3a5b2-5fd8-486c-bc61-e0e0993949cf ee4d238e-02c3-407b-a12c-bb268b5d07e6" theDestination="2d851a9a-e7cb-49a2-9853-aad2093456b0"/>
+        <theOutgoingTransitions id="8ad0697e-ea45-4834-ab67-f6a7ab966cdf" logicalName="Pagination Button Clicked" name="paginationButtonClicked" exceptionClass="" theActionSet="ee4d238e-02c3-407b-a12c-bb268b5d07e6" theDestination="2d851a9a-e7cb-49a2-9853-aad2093456b0"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="6b6bf4f8-9cd0-4745-b26b-5a47617b2ac4" logicalName="Action" name="ActionDefinition" kind="ActionDefinition">
+      <theContainedElements xsi:type="model.action:Action" id="ee4d238e-02c3-407b-a12c-bb268b5d07e6" logicalName="List Todo Item" name="list" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" theUsingBLogic="5d60b4e9-ac01-4bab-9672-c60be6c4a070" requestPath="list" viewName="" theOwnerController="28cf40a8-534c-4d88-b403-1ea07900d28a">
+        <httpMethod>GET</httpMethod>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:Action" id="db5d2320-4d72-46f0-b58e-0b762eb9db28" logicalName="Add Todo Item" name="add" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="REDIRECT" isSaveNewToken="false" theUsingBLogic="35c30363-dd26-4ed1-a6be-d6f6abfe9b35" requestPath="add" viewName="" theOwnerController="28cf40a8-534c-4d88-b403-1ea07900d28a">
+        <theValidatorUsages id="83b64652-ce3e-4ea0-9954-f94a7f1be843" theRootActionForm="07521332-3660-4dab-94ba-34529f752642" theUsingValidator="22c60cc1-7919-4113-814d-a1ccbbdc645f">
+          <thePathOfBeanFieldUsages id="97684847-57bb-4908-bda2-b8bebeac3b81" theField="1709d3d7-4d9a-4be9-9d1d-f00f3aa0f9c1"/>
+        </theValidatorUsages>
+        <httpMethod>POST</httpMethod>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:Action" id="22c3a5b2-5fd8-486c-bc61-e0e0993949cf" logicalName="Finish Todo Item" name="finish" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="REDIRECT" isSaveNewToken="false" requestPath="finish" viewName="" theOwnerController="28cf40a8-534c-4d88-b403-1ea07900d28a">
+        <httpMethod>POST</httpMethod>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="851b5372-a447-4a4c-a515-0109b73a492c" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition">
+      <theContainedElements xsi:type="model.action:BLogic" id="35c30363-dd26-4ed1-a6be-d6f6abfe9b35" logicalName="Add Todo Item" name="Add" theOwnerService="faaff467-d0cf-4ac6-94c5-58cc4a978286">
+        <theOwnedOutputBean id="21f1e780-6836-42b0-8dd1-2cd905a90fc6" logicalName="Add Todo Item" name="AddOutputBean"/>
+        <theOwnedInputBean id="d7d38337-7b74-406a-afd5-2f28341ce779" logicalName="Add Todo Item" name="AddInputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="460149a1-c427-418a-af32-f7934f45c69d" logicalName="Title" name="title" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="1709d3d7-4d9a-4be9-9d1d-f00f3aa0f9c1"/>
+        </theOwnedInputBean>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:BLogic" id="5d60b4e9-ac01-4bab-9672-c60be6c4a070" logicalName="List Todo Item" name="List" theOwnerService="faaff467-d0cf-4ac6-94c5-58cc4a978286">
+        <theOwnedOutputBean id="a00e6d5f-4480-4e41-9c31-d06cc506e57c" logicalName="List Todo Item" name="ListOutputBean"/>
+        <theOwnedInputBean id="7f2ea34e-2990-4767-adc7-11385a38a184" logicalName="List Todo Item" name="ListInputBean"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="8906ba4f-5190-485f-8321-8dc3ae368bac" logicalName="Action form" name="ActionForm" kind="ActionForm">
+      <theContainedElements xsi:type="model.scope:ActionFormClass" id="07521332-3660-4dab-94ba-34529f752642" logicalName="todo-managementForm" name="TodoManagementForm" isOptimizedActionForm="true" isRequestScope="true">
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="1709d3d7-4d9a-4be9-9d1d-f00f3aa0f9c1" logicalName="Title" name="title" aliasType="String" multiplicityType="DIRECT_INPUT" type="String">
+          <theSimpleValidators id="22c60cc1-7919-4113-814d-a1ccbbdc645f" logicalValidatorName="not empty" physicalValidatorName="NotEmpty"/>
+        </theContainedElements>
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="5c780207-38d4-4dc2-8635-528b0535eaf1" logicalName="Todo Id" name="todoId" aliasType="String" type="String"/>
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="ee51dcc4-3539-4d13-8b37-0e089c6ab382" logicalName="Page No" name="pageNo" aliasType="Integer" type="Integer"/>
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="4c3b25c6-938c-4552-a51e-33df65f6b0fa" logicalName="Page Size" name="pageSize" aliasType="Integer" type="Integer"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="bd51508b-5358-41e3-b4fe-287dfe09f548" logicalName="Session" name="Session" kind="SessionDefinition">
+      <theContainedElements xsi:type="model.scope:Session" id="a31c1c2c-3e49-4593-b28a-781efca3ea90" logicalName="Session list" name="Session"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="dca7ca70-4621-45ea-9527-78aa75579286" logicalName="Request" name="Request" kind="RequestDefinition">
+      <theContainedElements xsi:type="model.scope:Request" id="201f7327-dd76-4dd1-9f16-71c56d0b1e54" logicalName="Request list" name="Request">
+        <theContainedElements xsi:type="model.scope:RequestKey" id="38efc6e1-ae37-4a71-8fb2-628544da6ea5" logicalName="Todos" name="todos" lower="0" upper="*" theType="e4b62a93-3508-4a89-bcd6-76e2b03ce292"/>
+        <theContainedElements xsi:type="model.scope:RequestKey" id="795e7491-950d-496a-93db-bed0242d0018" logicalName="Pagination Link" name="paginationLink" lower="0" upper="*" theType="e4b62a93-3508-4a89-bcd6-76e2b03ce292"/>
+        <theContainedElements xsi:type="model.scope:RequestKey" id="3bc752c0-5f90-4bd1-97da-8f3e463a419c" logicalName="Total Count" name="totalCount" aliasType="Long" type="Long"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="e195caa7-7bfb-45d9-b860-806e5d3d982b" logicalName="Correlation item validation class" name="MultiFieldValidator" kind="MultiFieldValidator"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="ee5cc057-4258-4892-840b-9730557869c8" logicalName="Codelist" name="CodeList" kind="CodeList"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="84d8c0e3-27da-42bd-a673-53ddbb72d1bb" logicalName="Message" name="MessageDefinition" kind="MessageDefinition"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="e87bd344-ae8c-41ae-b1f1-35fb74dbba34" logicalName="Java bean" name="JavaBeanDefinition" kind="JavaBean">
+      <theContainedElements xsi:type="model.javabean:BeanClass" id="e4b62a93-3508-4a89-bcd6-76e2b03ce292" logicalName="Todos" name="Todos">
+        <theContainedElements xsi:type="model.javabean:BeanField" id="0aedeaea-93be-48fa-abb6-3d3c91e3c66e" logicalName="Todo Id" name="todoId" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+        <theContainedElements xsi:type="model.javabean:BeanField" id="4d3eae92-6585-45d7-92e0-b88f6893ba11" logicalName="Title" name="title" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="401d7900-9742-435e-9a75-40fa22f3ac9d" logicalName="DTO class" name="DTOClass" kind="DTOClass">
+      <theContainedElements xsi:type="model.entity:DTOClass" id="7f39f0f7-39bf-4272-8a5a-57b904cc8c28" logicalName="TodosDTO" name="TodosDTO">
+        <theContainedElements xsi:type="model.entity:DTOField" id="6ae1a42d-7464-4c62-a372-e90361dc68a7" logicalName="Todo Id" name="todoId" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+        <theContainedElements xsi:type="model.entity:DTOField" id="80d0b347-c8f0-412f-bcad-e0337ed9ee58" logicalName="Title" name="title" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="c71827a0-f5a9-4e35-8e31-ad49534f6812" logicalName="Controller" name="Controller" kind="Controller">
+      <theContainedElements xsi:type="model.action:Controller" id="28cf40a8-534c-4d88-b403-1ea07900d28a" name="todoManagementController" theOwnedAction="ee4d238e-02c3-407b-a12c-bb268b5d07e6 db5d2320-4d72-46f0-b58e-0b762eb9db28 22c3a5b2-5fd8-486c-bc61-e0e0993949cf" theRelatedService="faaff467-d0cf-4ac6-94c5-58cc4a978286"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="b980e1e2-dda3-4aad-af87-c09f0c9efedf" logicalName="Service" name="Service" kind="Service">
+      <theContainedElements xsi:type="model.action:Service" id="faaff467-d0cf-4ac6-94c5-58cc4a978286" name="todoManagementService" theOwnedBLogic="35c30363-dd26-4ed1-a6be-d6f6abfe9b35 5d60b4e9-ac01-4bab-9672-c60be6c4a070"/>
+    </theContainedElements>
+    <theProjectRoot href="tri.trip#1c3e6e59-2391-4212-b58f-609ea058ee8f" name="TriApp" logicalName="TriApplication"/>
+  </model.module:ModuleRoot>
+  <notation:Diagram type="IDE3_ModelID" element="447c91cc-66a6-47c7-939c-66fec74a8bea" measurementUnit="Pixel">
+    <children xsi:type="notation:Shape" type="2005" element="973f1cc0-2850-493f-991a-2316b6850c4f">
+      <children xsi:type="notation:DecorationNode" type="5005">
+        <layoutConstraint xsi:type="notation:Location" x="60" y="20"/>
+      </children>
+      <layoutConstraint xsi:type="notation:Bounds" x="240" y="84" width="49" height="49"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="2d851a9a-e7cb-49a2-9853-aad2093456b0">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="156" y="252" width="193" height="181"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges xsi:type="notation:Connector" type="4001" element="cb562fe1-2150-4bd7-b56a-2ac40718bb39" source="/1/@children.0" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-42" y="-129"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-15" y="-163"/>
+      </children>
+      <styles xsi:type="notation:FontStyle"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[-1, 20, 0, -122]$[-1, 136, 0, -6]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.55,0.08)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="54f32689-9ad8-4e9a-a404-417d8a548919" source="/1/@children.1" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-36" y="-132"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="3" y="-152"/>
+      </children>
+      <styles xsi:type="notation:FontStyle"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[3, 0, 35, -106]$[73, 16, 105, -90]$[61, 89, 93, -17]$[3, 99, 35, -7]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9844559585492227,0.05732484076433121)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9948186528497409,0.47770700636942676)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="09fade02-1be3-4918-8a4e-d7d1102e3c08" source="/1/@children.1" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-33" y="-138"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="11" y="-161"/>
+      </children>
+      <styles xsi:type="notation:FontStyle"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[2, 0, 3, -49]$[85, 0, 86, -49]$[85, 49, 86, 0]$[2, 49, 3, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9896373056994818,0.5987261146496815)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9844559585492227,0.910828025477707)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="8ad0697e-ea45-4834-ab67-f6a7ab966cdf" source="/1/@children.1" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="4" y="-32"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="30" y="-58"/>
+      </children>
+      <styles xsi:type="notation:FontStyle"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 6, 74, 7]$[0, 53, 74, 54]$[-74, 53, 0, 54]$[-74, 6, 0, 7]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.6839378238341969,0.9681528662420382)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.3005181347150259,0.9613259668508287)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

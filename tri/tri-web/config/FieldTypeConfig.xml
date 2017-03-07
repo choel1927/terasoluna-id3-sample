@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fieldTypeConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.terasoluna.jp/tools/ide3/model/field_type_config"
+	xsi:schemaLocation="http://www.terasoluna.jp/tools/ide3/model/field_type_config schema/FieldTypeConfig.xsd ">
+	<types>
+		<type name="java.lang.String" logicalName="String" />
+		<type name="java.lang.Boolean" logicalName="Boolean" />
+		<type name="java.lang.Byte" logicalName="Byte" formatKind="number" />
+		<type name="java.lang.Short" logicalName="Short" formatKind="number" />
+		<type name="java.lang.Integer" logicalName="Integer" formatKind="number" />
+		<type name="java.lang.Long" logicalName="Long" formatKind="number" />
+		<type name="java.lang.Float" logicalName="Float" formatKind="number" />
+		<type name="java.lang.Double" logicalName="Double" formatKind="number" />
+		<type name="java.math.BigInteger" logicalName="BigInteger"
+			simpleName="BigInteger" formatKind="number" />
+		<type name="java.math.BigDecimal" logicalName="BigDecimal"
+			simpleName="BigDecimal" formatKind="number" />
+		<type name="java.util.Date" logicalName="Date" simpleName="utilDate"
+			formatKind="date" />
+		<type name="org.springframework.web.multipart.MultipartFile"
+			logicalName="Upload file" simpleName="MultipartFile" />
+		<type name="org.terasoluna.gfw.common.message.ResultMessages"
+			logicalName="Message" simpleName="ResultMessages" />
+	</types>
+	<fields>
+		<field metaclass="jp.terasoluna.tools.ide3.model.scope.ActionFormField">
+			<type ref="*" />
+		</field>
+		<field metaclass="jp.terasoluna.tools.ide3.model.scope.SessionKey">
+			<type ref="*" />
+		</field>
+		<field metaclass="jp.terasoluna.tools.ide3.model.scope.RequestKey">
+			<type ref="*" />
+		</field>
+		<field metaclass="jp.terasoluna.tools.ide3.model.javabean.BeanField">
+			<type ref="*" />
+		</field>
+		<field metaclass="jp.terasoluna.tools.ide3.model.entity.DTOField">
+			<type ref="java.lang.String" />
+			<type ref="java.lang.Boolean" />
+			<type ref="java.lang.Byte" />
+			<type ref="java.lang.Short" />
+			<type ref="java.lang.Integer" />
+			<type ref="java.lang.Long" />
+			<type ref="java.lang.Float" />
+			<type ref="java.lang.Double" />
+			<type ref="java.math.BigInteger" />
+			<type ref="java.math.BigDecimal" />
+			<type ref="java.util.Date" />
+			<type ref="org.terasoluna.gfw.common.message.ResultMessages" />
+		</field>
+		<field metaclass="jp.terasoluna.tools.ide3.model.scope.IOBeanField">
+			<type ref="java.lang.String" />
+			<type ref="java.lang.Boolean" />
+			<type ref="java.lang.Byte" />
+			<type ref="java.lang.Short" />
+			<type ref="java.lang.Integer" />
+			<type ref="java.lang.Long" />
+			<type ref="java.lang.Float" />
+			<type ref="java.lang.Double" />
+			<type ref="java.math.BigInteger" />
+			<type ref="java.math.BigDecimal" />
+			<type ref="java.util.Date" />
+			<type ref="org.terasoluna.gfw.common.message.ResultMessages" />
+		</field>
+	</fields>
+</fieldTypeConfig>

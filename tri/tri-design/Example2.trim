@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model.action="http:///model/action.ecore" xmlns:model.core="http:///model/core.ecore" xmlns:model.entity="http:///model/entity.ecore" xmlns:model.javabean="http:///model/javabean.ecore" xmlns:model.module="http:///model/module.ecore" xmlns:model.scope="http:///model/scope.ecore" xmlns:model.screendesign="http:///model/screendesign.ecore" xmlns:model.screenflow="http:///model/screenflow.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <model.module:ModuleRoot id="c591be66-541f-4cdf-84a0-482e171b28d7" logicalName="exampleTwo" name="Example2" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
+    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="3eddac91-a42f-4ce8-9cda-ee590771644d" logicalName="exampleTwoScreen flow" name="Example2ScreenFlow">
+      <theContainedElements xsi:type="model.core:DiagramElement" id="b34b669a-8b5e-4591-a4fb-2fc8d3a8759b" name="exampleTwoScreen flow"/>
+      <theContainedElements xsi:type="model.screenflow:InitialNode" id="f401a578-d1e9-427d-adba-98f607deae78" logicalName="Entry Point" name="Z001">
+        <theOutgoingTransitions id="cedd4682-557e-4e9f-adf7-6d6b733d40a5" logicalName="Go To List" name="T001" exceptionClass="" theActionSet="b99ce7f7-34e7-4757-9eba-20ce93be5403" theDestination="294ad614-6dfc-4523-b2ad-027d1f5b2d77"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="294ad614-6dfc-4523-b2ad-027d1f5b2d77" logicalName="Main Page" name="P001" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="2aece16f-a122-4de0-b261-44a01d769344" logicalName="Input Form" name="F001">
+          <theContainedElements xsi:type="model.screendesign:ScreenItem" id="a86f2869-e990-49a0-a41e-105fcee34277" logicalName="Item Name" name="itemName" theRelatedScopeField="0bab0d6b-f40c-4892-b24e-055360600d55" appearanceType="TEXT" triTagName="div" labelTagName="label">
+            <thePathOfBeanFieldUsages id="1d90f221-a196-4ca0-8ba6-a6b1f9f6f9e4" theField="0bab0d6b-f40c-4892-b24e-055360600d55"/>
+          </theContainedElements>
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="7a71d812-825b-4337-84b5-b856516c121e" logicalName="Add" name="addButton" theRelatedTransition="61ca56fa-cb6f-4983-8595-aadcf7af2101" triTagName="div">
+            <thePageLinkTotal id="1285ed4b-bcde-4ad6-be2c-c7bbbd30803f"/>
+            <thePageLinkIndex id="ceb124e8-049f-4274-ac1c-676a30327f07"/>
+            <thePageLinkRow id="2fb9e14a-2dbb-4cb0-9c7e-c988c5e27c0c"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theContainedElements xsi:type="model.screendesign:Form" id="a1c5159a-5d69-4e23-afa9-780c0f6c2680" logicalName="List Form" name="F002">
+          <theContainedElements xsi:type="model.screendesign:ScreenItemGroup" id="5695a8b4-d90c-4799-aa40-3be5f89b953b" logicalName="Item List" name="itemList" theRelatedScopeField="83d28879-dd9e-47c1-b892-13e0aa926903">
+            <theContainedElements xsi:type="model.screendesign:ScreenItem" id="d83e6e92-c394-4882-b2e6-31771a9f3276" logicalName="Item Id" name="itemId" theRelatedScopeField="83d28879-dd9e-47c1-b892-13e0aa926903" labelTagName="th" controlWrapperTagName="td">
+              <thePathOfBeanFieldUsages id="2ae4e78e-7c02-4b1f-8c00-179a9e0ce947" theField="83d28879-dd9e-47c1-b892-13e0aa926903"/>
+              <thePathOfBeanFieldUsages id="ab89a97d-3ba1-42f6-b04d-ebc32bbf0eee" theField="083227b3-8c55-423c-b310-2941ac3c6b38"/>
+            </theContainedElements>
+            <theContainedElements xsi:type="model.screendesign:ScreenItem" id="469c6ac0-8964-4e2c-aa58-747f9fe5aa66" logicalName="Item Name" name="itemName" theRelatedScopeField="83d28879-dd9e-47c1-b892-13e0aa926903" labelTagName="th" controlWrapperTagName="td">
+              <thePathOfBeanFieldUsages id="7d64f7b0-d7ba-43fa-af96-ecdd49b37d50" theField="83d28879-dd9e-47c1-b892-13e0aa926903"/>
+              <thePathOfBeanFieldUsages id="c4aac548-1709-4f9a-9cc0-2f04d2e931cd" theField="34b43202-1742-4eb1-b38e-2ba0e13dee8c"/>
+            </theContainedElements>
+            <theContainedElements xsi:type="model.screendesign:ButtonLink" id="9f83465d-2e71-4d3d-a775-bedfe8649605" logicalName="Delete" name="deleteButton" connectionType="TABLE_ROW_LINK" theRelatedTransition="0441f761-7073-4a55-bb5b-90bbd736ac96" theParamProperty="083227b3-8c55-423c-b310-2941ac3c6b38" theParamId="eee1ec0b-dfa8-4daa-8343-ca231c702507" controlWrapperTagName="td">
+              <thePageLinkTotal id="f4567739-0187-4b5a-a672-0936c7235b43"/>
+              <thePageLinkIndex id="d3e075c8-7ad7-4e97-a2cd-a4dfecd85ad1"/>
+              <thePageLinkRow id="76dc42ce-6485-4b91-806d-7ca5023c38da"/>
+            </theContainedElements>
+            <thePathOfBeanFieldUsages id="9e5cf6e5-e2f0-4064-b7b0-17c0971db0ba" theField="83d28879-dd9e-47c1-b892-13e0aa926903"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theOutgoingTransitions id="61ca56fa-cb6f-4983-8595-aadcf7af2101" logicalName="Add Item Clicked" name="T002" exceptionClass="" theActionSet="ff557a9f-a59f-4833-bb7c-dbaa385e506e b99ce7f7-34e7-4757-9eba-20ce93be5403" theDestination="294ad614-6dfc-4523-b2ad-027d1f5b2d77"/>
+        <theOutgoingTransitions id="0441f761-7073-4a55-bb5b-90bbd736ac96" logicalName="Delete Item Clicked" name="T003" exceptionClass="" theActionSet="65d15ba1-f165-4a03-919d-9182a8fb7c0d b99ce7f7-34e7-4757-9eba-20ce93be5403" theDestination="294ad614-6dfc-4523-b2ad-027d1f5b2d77"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="993f85c0-6bc7-4178-8628-eb7f164313a4" logicalName="Action" name="ActionDefinition" kind="ActionDefinition">
+      <theContainedElements xsi:type="model.action:Action" id="b99ce7f7-34e7-4757-9eba-20ce93be5403" logicalName="List Item" name="list" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" theUsingBLogic="307142cb-30ee-47fe-954b-075228760f38" requestPath="list" viewName="" theOwnerController="4c92e326-e873-4fba-aaa1-5d01c5c5004d">
+        <httpMethod>GET</httpMethod>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:Action" id="ff557a9f-a59f-4833-bb7c-dbaa385e506e" logicalName="Add Item" name="add" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="REDIRECT" isSaveNewToken="false" theUsingBLogic="e21639d8-7e0f-4c2d-a41a-c80d9b29d700" requestPath="add" viewName="" theOwnerController="4c92e326-e873-4fba-aaa1-5d01c5c5004d">
+        <httpMethod>POST</httpMethod>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:Action" id="65d15ba1-f165-4a03-919d-9182a8fb7c0d" logicalName="Delete Item" name="delete" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="REDIRECT" isSaveNewToken="false" theUsingBLogic="21077d00-7390-469f-82f8-5f31b0412a35" requestPath="delete" viewName="" theOwnerController="4c92e326-e873-4fba-aaa1-5d01c5c5004d">
+        <httpMethod>GET</httpMethod>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="d116abcf-68d9-49e7-a20f-db5a53f8cf33" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition">
+      <theContainedElements xsi:type="model.action:BLogic" id="e21639d8-7e0f-4c2d-a41a-c80d9b29d700" logicalName="Add Item" name="Add" theOwnerService="8ae6b194-68d7-4241-a9bb-dbbc3ccea872">
+        <theOwnedOutputBean id="90f61412-fa52-4edd-93ab-623b399e4b0c" logicalName="Add Item" name="AddOutputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="99f65408-80eb-4354-b353-3831fbaac6ba" logicalName="Item List" name="itemList" lower="0" upper="*" theType="b677faf8-b570-4832-8fa4-e5758f47923a" theRelatedScopeField="83d28879-dd9e-47c1-b892-13e0aa926903"/>
+        </theOwnedOutputBean>
+        <theOwnedInputBean id="9ae7670e-c244-43d6-87d0-8831afa8f99f" logicalName="Add Item" name="AddInputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="879c5af3-ce10-4d03-8a2b-6127146e7299" logicalName="Item Name" name="itemName" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="0bab0d6b-f40c-4892-b24e-055360600d55"/>
+        </theOwnedInputBean>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:BLogic" id="307142cb-30ee-47fe-954b-075228760f38" logicalName="List Item" name="List" theOwnerService="8ae6b194-68d7-4241-a9bb-dbbc3ccea872">
+        <theOwnedOutputBean id="4869d2a6-8efc-47e2-9abf-5d1ae91a16e7" logicalName="List Item" name="ListOutputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="7b45e0b7-0df4-47d5-a4b1-9ccb69ecc7ce" logicalName="Item List" name="itemList" lower="0" upper="*" theType="b677faf8-b570-4832-8fa4-e5758f47923a" theRelatedScopeField="83d28879-dd9e-47c1-b892-13e0aa926903"/>
+        </theOwnedOutputBean>
+        <theOwnedInputBean id="2769e8cc-59b2-4e40-9625-192f10193088" logicalName="List Item" name="ListInputBean"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:BLogic" id="21077d00-7390-469f-82f8-5f31b0412a35" logicalName="Delete Item" name="Delete" theOwnerService="8ae6b194-68d7-4241-a9bb-dbbc3ccea872">
+        <theOwnedOutputBean id="9bbf9e7a-79ec-499a-99e4-609b83d66190" logicalName="Delete Item" name="DeleteOutputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="9de4348f-9641-42bb-9eff-801c57e18a36" logicalName="Item List" name="itemList" lower="0" upper="*" theType="b677faf8-b570-4832-8fa4-e5758f47923a" theRelatedScopeField="83d28879-dd9e-47c1-b892-13e0aa926903"/>
+        </theOwnedOutputBean>
+        <theOwnedInputBean id="c10cb403-0f95-4f6f-a40c-3d0974b087cb" logicalName="Delete Item" name="DeleteInputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="bb04d16f-8dcf-46c5-b9ad-ae9fb004880e" logicalName="Item Id" name="itemId" aliasType="Integer" type="Integer" theRelatedScopeField="eee1ec0b-dfa8-4daa-8343-ca231c702507"/>
+        </theOwnedInputBean>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="340cccb8-bfa7-40c5-abaf-1a26af150df7" logicalName="Action form" name="ActionForm" kind="ActionForm">
+      <theContainedElements xsi:type="model.scope:ActionFormClass" id="582e6dde-fa8b-44ec-b729-4938d3a2190b" logicalName="exampleTwoForm" name="Example2Form" isOptimizedActionForm="true" isRequestScope="true">
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="0bab0d6b-f40c-4892-b24e-055360600d55" logicalName="Item Name" name="itemName" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="eee1ec0b-dfa8-4daa-8343-ca231c702507" logicalName="Item Id" name="itemId" aliasType="Integer" type="Integer"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="723ea6f7-56bf-452a-8b9f-5636888712ef" logicalName="Session" name="Session" kind="SessionDefinition">
+      <theContainedElements xsi:type="model.scope:Session" id="72459f35-b171-4558-abcd-4bbf0aab3fcf" logicalName="Session list" name="Session"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="3356593e-6afd-4405-8743-7fd609b513b6" logicalName="Request" name="Request" kind="RequestDefinition">
+      <theContainedElements xsi:type="model.scope:Request" id="894f80a9-f374-4174-904e-4d9561f315be" logicalName="Request list" name="Request">
+        <theContainedElements xsi:type="model.scope:RequestKey" id="83d28879-dd9e-47c1-b892-13e0aa926903" logicalName="Item List" name="itemList" lower="0" upper="*" theType="0e14291a-1cb9-4977-b41c-d0fef2f16c30"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="006bfaff-a5c9-4ad8-9ed3-3e1250a97bee" logicalName="Correlation item validation class" name="MultiFieldValidator" kind="MultiFieldValidator"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="ce648075-c266-4fdd-9833-06c75dde818e" logicalName="Codelist" name="CodeList" kind="CodeList"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="dae3f73d-d3c0-430b-857b-454e43cf523c" logicalName="Message" name="MessageDefinition" kind="MessageDefinition"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="eaecf046-b6de-4992-8fd3-f18735c4e59d" logicalName="Java bean" name="JavaBeanDefinition" kind="JavaBean">
+      <theContainedElements xsi:type="model.javabean:BeanClass" id="0e14291a-1cb9-4977-b41c-d0fef2f16c30" logicalName="Item List" name="ItemList">
+        <theContainedElements xsi:type="model.javabean:BeanField" id="083227b3-8c55-423c-b310-2941ac3c6b38" logicalName="Item Id" name="itemId" aliasType="Integer" multiplicityType="DIRECT_INPUT" type="Integer"/>
+        <theContainedElements xsi:type="model.javabean:BeanField" id="34b43202-1742-4eb1-b38e-2ba0e13dee8c" logicalName="Item Name" name="itemName" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="a0915b2a-0bf5-47ed-bd48-807349375ab0" logicalName="DTO class" name="DTOClass" kind="DTOClass">
+      <theContainedElements xsi:type="model.entity:DTOClass" id="b677faf8-b570-4832-8fa4-e5758f47923a" logicalName="Item ListDTO" name="ItemListDTO">
+        <theContainedElements xsi:type="model.entity:DTOField" id="ac2c8e9e-e700-44b3-b397-b55f83d4ff20" logicalName="Item Id" name="itemId" aliasType="Integer" multiplicityType="DIRECT_INPUT" type="Integer"/>
+        <theContainedElements xsi:type="model.entity:DTOField" id="2b5c76d6-6451-4034-98a8-a1407b77a842" logicalName="Item Name" name="itemName" aliasType="String" multiplicityType="DIRECT_INPUT" type="String"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="46df3776-83c3-484b-94dc-2c834190eca6" logicalName="Controller" name="Controller" kind="Controller">
+      <theContainedElements xsi:type="model.action:Controller" id="4c92e326-e873-4fba-aaa1-5d01c5c5004d" name="Example2Controller" theOwnedAction="b99ce7f7-34e7-4757-9eba-20ce93be5403 ff557a9f-a59f-4833-bb7c-dbaa385e506e 65d15ba1-f165-4a03-919d-9182a8fb7c0d" theRelatedService="8ae6b194-68d7-4241-a9bb-dbbc3ccea872"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="7652ea75-acbc-454e-a530-125675333ba0" logicalName="Service" name="Service" kind="Service">
+      <theContainedElements xsi:type="model.action:Service" id="8ae6b194-68d7-4241-a9bb-dbbc3ccea872" name="Example2Service" theOwnedBLogic="e21639d8-7e0f-4c2d-a41a-c80d9b29d700 307142cb-30ee-47fe-954b-075228760f38 21077d00-7390-469f-82f8-5f31b0412a35"/>
+    </theContainedElements>
+    <theProjectRoot href="tri.trip#1c3e6e59-2391-4212-b58f-609ea058ee8f" name="TriApp" logicalName="TriApplication"/>
+  </model.module:ModuleRoot>
+  <notation:Diagram type="IDE3_ModelID" element="3eddac91-a42f-4ce8-9cda-ee590771644d" measurementUnit="Pixel">
+    <children xsi:type="notation:Shape" type="2005" element="f401a578-d1e9-427d-adba-98f607deae78" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5005">
+        <layoutConstraint xsi:type="notation:Location" x="60" y="20"/>
+      </children>
+      <layoutConstraint xsi:type="notation:Bounds" x="221" y="80"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="294ad614-6dfc-4523-b2ad-027d1f5b2d77" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="132" y="228" width="217" height="193"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges xsi:type="notation:Connector" type="4001" element="cedd4682-557e-4e9f-adf7-6d6b733d40a5" source="/1/@children.0" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-23" y="128"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="4" y="145"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[8, 20, 9, -204]$[8, 128, 9, -96]"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="61ca56fa-cb6f-4983-8595-aadcf7af2101" source="/1/@children.1" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-23" y="-112"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="16" y="-142"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[40, 0, 12, -53]$[147, 0, 119, -53]$[147, 61, 119, 8]$[40, 61, 12, 8]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.815668202764977,0.05699481865284974)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9447004608294931,0.3316062176165803)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="0441f761-7073-4a55-bb5b-90bbd736ac96" source="/1/@children.1" target="/1/@children.1">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-6" y="-124"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="20" y="-152"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[1, 0, 1, -51]$[111, 0, 111, -51]$[111, 51, 111, 0]$[1, 51, 1, 0]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9953917050691244,0.6217616580310881)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9953917050691244,0.8860103626943006)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

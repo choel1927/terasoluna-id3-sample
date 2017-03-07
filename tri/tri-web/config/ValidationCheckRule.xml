@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><checks xmlns="http://www.terasoluna.jp/tools/ide3/model/validation_check_rule_gfw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.terasoluna.jp/tools/ide3/model/validation_check_rule_gfw schema/ValidationCheckRuleGFW.xsd ">
+	<check comment="not null check" logicalName="not null input" name="NotNull">
+		<type value="*"/>
+		<include fqcn="javax.validation.constraints.NotNull"/>
+	</check>
+	<check comment="not empty check" logicalName="not empty" name="NotEmpty">
+		<type value="String"/>
+		<include fqcn="org.hibernate.validator.constraints.NotEmpty"/>
+	</check>
+	<check comment="null check" logicalName="null input" name="Null">
+		<type value="*"/>
+		<include fqcn="javax.validation.constraints.Null"/>
+	</check>
+	<check comment="true check" logicalName="assert true" name="AssertTrue">
+		<type value="Boolean"/>
+		<include fqcn="javax.validation.constraints.AssertTrue"/>
+	</check>
+	<check comment="false check" logicalName="assert false" name="AssertFalse">
+		<type value="Boolean"/>
+		<include fqcn="javax.validation.constraints.AssertFalse"/>
+	</check>
+	<check comment="email address format check" logicalName="mail address" name="Email">
+		<type value="String"/>
+		<include fqcn="org.hibernate.validator.constraints.Email"/>
+	</check>
+	<check comment="credit card number format check" logicalName="credit card number" name="CreditCardNumber">
+		<type value="String"/>
+		<include fqcn="org.hibernate.validator.constraints.CreditCardNumber"/>
+	</check>
+	<check comment="string length check" logicalName="string length" name="Size">
+		<type value="String"/>
+		<include fqcn="javax.validation.constraints.Size">
+			<param comment="minimum number of characters" isUsedParamName="true" logicalName="minimum" name="min" paramType="integer"/>
+			<param comment="maximum number of characters" isUsedParamName="true" logicalName="maximum" name="max" paramType="integer"/>
+		</include>
+	</check>
+	<check comment="string of one or more characters check" logicalName="string of one or more characters" name="NotBlank">
+		<type value="String"/>
+		<include fqcn="org.hibernate.validator.constraints.NotBlank"/>
+	</check>
+	<check comment="regular expression check" logicalName="regular expression" name="Pattern">
+		<type value="String"/>
+		<include fqcn="javax.validation.constraints.Pattern">
+			<param comment="regular expression conditions" escapeKind="java" isUsedParamName="true" logicalName="regular expression" name="regexp" paramType="string"/>
+		</include>
+	</check>
+	<check comment="future date check" logicalName="future date" name="Future">
+		<type value="java.util.Date"/>
+		<type value="java.util.Calendar"/>
+		<include fqcn="javax.validation.constraints.Future"/>
+	</check>
+	<check comment="past date check" logicalName="past date" name="Past">
+		<type value="java.util.Date"/>
+		<type value="java.util.Calendar"/>
+		<include fqcn="javax.validation.constraints.Past"/>
+	</check>
+	<check comment="integer value range check" logicalName="integer value range" name="Min-Max">
+		<type value="Byte"/>
+		<type value="Short"/>
+		<type value="Integer"/>
+		<type value="Long"/>
+		<type value="java.math.BigDecimal"/>
+		<type value="java.math.BigInteger"/>
+		<include fqcn="javax.validation.constraints.Min">
+			<param comment="minimum value" isUsedParamName="true" logicalName="minimum" name="value" paramType="integer"/>
+		</include>
+		<include fqcn="javax.validation.constraints.Max">
+			<param comment="maximum value" isUsedParamName="true" logicalName="maximum" name="value" paramType="integer"/>
+		</include>
+	</check>
+	<check comment="integer value range check(Decimal)" logicalName="integer value range(Decimal)" name="DecimalMin-DecimalMax">
+		<type value="Byte"/>
+		<type value="Short"/>
+		<type value="Integer"/>
+		<type value="Long"/>
+		<type value="java.math.BigDecimal"/>
+		<type value="java.math.BigInteger"/>
+		<type value="String"/>
+		<include fqcn="javax.validation.constraints.DecimalMin">
+			<param comment="minimum value" isUsedParamName="true" logicalName="minimum" name="value" paramType="string"/>
+		</include>
+		<include fqcn="javax.validation.constraints.DecimalMax">
+			<param comment="maximum value" isUsedParamName="true" logicalName="maximum" name="value" paramType="string"/>
+		</include>
+	</check>
+	<check comment="number of digits check" logicalName="number of digits" name="Digits">
+		<type value="Byte"/>
+		<type value="Short"/>
+		<type value="Integer"/>
+		<type value="Long"/>
+		<type value="Double"/>
+		<type value="Float"/>
+		<type value="java.math.BigDecimal"/>
+		<type value="java.math.BigInteger"/>
+		<type value="String"/>
+		<include fqcn="javax.validation.constraints.Digits">
+			<param comment="maximum integer digits" isUsedParamName="true" logicalName="maximum integer digits" name="integer" paramType="integer"/>
+			<param comment="maximum decimal digits" isUsedParamName="true" logicalName="maximum decimal digits" name="fraction" paramType="integer"/>
+		</include>
+	</check>
+	<check comment="url format check" logicalName="URL" name="URL">
+		<type value="String"/>
+		<include fqcn="org.hibernate.validator.constraints.URL">
+			<param comment="port" isUsedParamName="true" logicalName="port" name="port" paramType="integer"/>
+			<param comment="host" isUsedParamName="true" logicalName="host" name="host" paramType="string"/>
+			<param comment="protocol" isUsedParamName="true" logicalName="protocol" name="protocol" paramType="string"/>
+			<param comment="regular expression conditions" escapeKind="java" isUsedParamName="true" logicalName="regular expression" name="regexp" paramType="string"/>
+		</include>
+	</check>
+</checks>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="logback.xsd">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern><![CDATA[date:%d{yyyy-MM-dd HH:mm:ss}\tthread:%thread\tX-Track:%X{X-Track}\tlevel:%-5level\tlogger:%-48logger{48}\tmessage:%msg%n]]></pattern>
+        </encoder>
+    </appender>
+
+    <appender name="APPLICATION_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${app.log.dir:-log}/DesignPattern-application.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${app.log.dir:-log}/DesignPattern-application-%d{yyyyMMdd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern><![CDATA[date:%d{yyyy-MM-dd HH:mm:ss}\tthread:%thread\tX-Track:%X{X-Track}\tlevel:%-5level\tlogger:%-48logger{48}\tmessage:%msg%n]]></pattern>
+        </encoder>
+    </appender>
+
+    <appender name="MONITORING_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${app.log.dir:-log}/DesignPattern-monitoring.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${app.log.dir:-log}/DesignPattern-monitoring-%d{yyyyMMdd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern><![CDATA[date:%d{yyyy-MM-dd HH:mm:ss}\tX-Track:%X{X-Track}\tlevel:%-5level\tmessage:%msg%n]]></pattern>
+        </encoder>
+    </appender>
+
+    <!-- Application Loggers -->
+    <logger name="com.choel.designpattern" level="debug" />
+
+    <!-- TERASOLUNA -->
+    <logger name="org.terasoluna.gfw" level="info" />
+    <logger name="org.terasoluna.gfw.web.logging.TraceLoggingInterceptor" level="trace" />
+    <logger name="org.terasoluna.gfw.common.exception.ExceptionLogger" level="info" />
+    <logger name="org.terasoluna.gfw.common.exception.ExceptionLogger.Monitoring" level="error" additivity="false">
+        <appender-ref ref="MONITORING_LOG_FILE" />
+    </logger>
+
+    <!-- 3rdparty Loggers -->
+    <logger name="org.springframework" level="warn" />
+    <logger name="org.springframework.web.servlet" level="info" />
+    <logger name="org.springframework.jdbc.datasource.DataSourceTransactionManager" level="debug" />
+    <logger name="jdbc.sqltiming" level="debug" />
+    
+    <!-- only for development -->
+    <logger name="jdbc.resultsettable" level="debug" />
+    
+    <root level="warn">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="APPLICATION_LOG_FILE" />
+    </root>
+
+</configuration>
