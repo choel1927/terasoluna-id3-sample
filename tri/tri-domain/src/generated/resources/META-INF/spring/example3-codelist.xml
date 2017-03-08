@@ -8,4 +8,16 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
 http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd">
 
+    <bean class="org.terasoluna.gfw.common.codelist.SimpleMapCodeList" name="CL_PageTypeList">
+        <property name="map">
+            <map>
+                <entry key="1">
+                    <value>Page One</value>
+                </entry>
+                <entry key="2">
+                    <value>Page Two</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
 </beans>

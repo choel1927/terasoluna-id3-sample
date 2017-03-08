@@ -24,6 +24,7 @@
         class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basenames">
             <list>
+            	<value>i18n/application-messages</value>
                 <value>TriApp-messages</value>
                 <value>todoManagement-messages</value>
                 <value>Example1-messages</value>
