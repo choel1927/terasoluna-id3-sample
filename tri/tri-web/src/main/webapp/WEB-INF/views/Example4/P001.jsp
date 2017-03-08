@@ -17,8 +17,8 @@
                 <form:options items="${CL_LicenseType}" />
             </form:select>
         </div>
-        <div id="tri_F001/input">
-            <input id="input" name="input" type="submit" value="input" />
+        <div id="tri_F001/register">
+            <input id="register" name="register" type="submit" value="Register" />
         </div>
     </fieldset>
 </form:form>

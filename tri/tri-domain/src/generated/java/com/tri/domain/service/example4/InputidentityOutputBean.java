@@ -18,22 +18,22 @@ public class InputidentityOutputBean implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /** 
-     * LicenseType <br>
+     * licenseType <br>
      *  
      */
     private Integer licenseType;
 
     /** 
-     * get LicenseType <br>
-     * @return LicenseType  
+     * get licenseType <br>
+     * @return licenseType  
      */
     public Integer getLicenseType() {
         return licenseType;
     }
 
     /** 
-     * set LicenseType <br>
-     * @param licenseType  LicenseType  
+     * set licenseType <br>
+     * @param licenseType  licenseType  
      */
     public void setLicenseType(Integer licenseType) {
         this.licenseType = licenseType;

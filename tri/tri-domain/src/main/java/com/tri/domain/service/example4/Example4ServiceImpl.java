@@ -19,7 +19,7 @@ public class Example4ServiceImpl implements Example4Service {
     public InputidentityOutputBean inputidentity(InputidentityInputBean input) {
         InputidentityOutputBean output = new InputidentityOutputBean();
         output.setLicenseType(input.getLicenseType());
-        System.out.println("REDIRECT SERVICE");
+        System.out.println("REDIRECT REQUEST IN EXAMPLE " + output.getLicenseType());
         return output;
     }
 }

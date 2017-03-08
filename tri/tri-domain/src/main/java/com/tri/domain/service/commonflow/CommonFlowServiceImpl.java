@@ -23,8 +23,8 @@ public class CommonFlowServiceImpl implements CommonFlowService {
 
     public IdentityOutputBean identity(IdentityInputBean input) {
         IdentityOutputBean output = new IdentityOutputBean();
-        output.setLicenseType(input.getLicenseType());
-        System.out.println("INSIDE COMMON SCREEN");
+        output.setLicenseType(200);
+        System.out.println("INSIDE COMMON SCREEN " + input.getLicenseType());
         return output;
     }
 
@@ -35,7 +35,7 @@ public class CommonFlowServiceImpl implements CommonFlowService {
         output.setPhone("sample value for phone");
         output.setEmail("sample value for email");
         output.setAddress("sample value for address");
-        output.setLicenseType("sample value for licenseType");
+        output.setLicenseType(9999);
         return output;
     }
 }

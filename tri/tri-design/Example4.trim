@@ -17,10 +17,10 @@
           <theContainedElements xsi:type="model.screendesign:ScreenItem" id="2b281f5b-057a-45fb-8769-4a5b8a5126c7" logicalName="LicenseType" name="licenseType" theRelatedScopeField="a941ca6f-d275-4d33-912c-53e853299b9d" appearanceType="DROPDOWN" theRelatedCodeList="fa4d5d75-87e1-4f40-b0e8-40eaada79628" triTagName="div" labelTagName="label">
             <thePathOfBeanFieldUsages id="a1b3cae0-4521-4610-98cc-21e452573b50" theField="a941ca6f-d275-4d33-912c-53e853299b9d"/>
           </theContainedElements>
-          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="75746d72-8f9a-4177-b14d-d220e97a300f" logicalName="Input" name="input" theRelatedTransition="549501d1-a27f-4d48-8011-75991d7a9861" triTagName="div">
-            <thePageLinkTotal id="6a9c97d8-0f6f-47af-9a7f-539c0629466b"/>
-            <thePageLinkIndex id="a2f6f652-ca0c-4de6-ac93-78a5e5eb3691"/>
-            <thePageLinkRow id="1e921809-cca8-4d31-af02-8d448352f699"/>
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="927ac98f-fe1f-4017-918d-f636f42f7d70" logicalName="Register" name="register" theRelatedTransition="549501d1-a27f-4d48-8011-75991d7a9861" triTagName="div">
+            <thePageLinkTotal id="c5becf46-e78f-4a5b-825b-0f31c01076f1"/>
+            <thePageLinkIndex id="884e0ace-96b9-4a43-a6cc-d0996720490b"/>
+            <thePageLinkRow id="b04e2bce-32f4-4fb8-8fb2-65eef1a519d7"/>
           </theContainedElements>
         </theContainedElements>
         <theOutgoingTransitions id="549501d1-a27f-4d48-8011-75991d7a9861" logicalName="Go To Common Flow" name="T002" exceptionClass="" theActionSet="9b3943f8-1751-4be6-af6f-38b5fd7dbb13" theDestination="fa284235-1517-441a-ac69-3d6023100f4e">
@@ -52,7 +52,7 @@
     <theContainedElements xsi:type="model.core:DesignPhase" id="3a1f88f5-a013-4209-a579-67e050fb7b5e" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition">
       <theContainedElements xsi:type="model.action:BLogic" id="94ada5b8-d123-4b3e-8816-c7270c460ad7" logicalName="Input Identity" name="Inputidentity" theOwnerService="2239e1cc-223d-4815-a42b-3fecb5cea5f2">
         <theOwnedOutputBean id="5f347313-3c35-4dbf-bc98-a2f589c0b067" logicalName="Input Identity" name="InputidentityOutputBean">
-          <theContainedElements xsi:type="model.scope:IOBeanField" id="76936dca-8482-48e2-acf9-87ea4f9260d8" logicalName="LicenseType" name="licenseType" aliasType="Integer" type="Integer" theRelatedScopeField="a941ca6f-d275-4d33-912c-53e853299b9d"/>
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="fa1fe318-fd9a-4d34-84c5-46855c35083e" logicalName="licenseType" name="licenseType" aliasType="Integer" type="Integer" theRelatedScopeField="a1d45c24-4c5a-49aa-bb3d-b3319c6908bc"/>
         </theOwnedOutputBean>
         <theOwnedInputBean id="8f7a7c47-1723-4110-8df1-b9e0cc841162" logicalName="Input Identity" name="InputidentityInputBean">
           <theContainedElements xsi:type="model.scope:IOBeanField" id="9789c12c-6a43-4d45-b84c-d8d0119077f8" logicalName="LicenseType" name="licenseType" aliasType="Integer" type="Integer" theRelatedScopeField="a941ca6f-d275-4d33-912c-53e853299b9d"/>
@@ -68,7 +68,9 @@
       <theContainedElements xsi:type="model.scope:Session" id="b9ee4363-849a-487e-be8f-5aeea92bcfd2" logicalName="Session list" name="Session"/>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="a5c2af80-ba5a-468b-980c-bf637628292c" logicalName="Request" name="Request" kind="RequestDefinition">
-      <theContainedElements xsi:type="model.scope:Request" id="cea175ca-7561-46c9-ad40-3828fe492532" logicalName="Request list" name="Request"/>
+      <theContainedElements xsi:type="model.scope:Request" id="cea175ca-7561-46c9-ad40-3828fe492532" logicalName="Request list" name="Request">
+        <theContainedElements xsi:type="model.scope:RequestKey" id="a1d45c24-4c5a-49aa-bb3d-b3319c6908bc" logicalName="License Type" name="licenseType" aliasType="Integer" type="Integer"/>
+      </theContainedElements>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="76713770-56a1-4291-875e-67b42148be7d" logicalName="Correlation item validation class" name="MultiFieldValidator" kind="MultiFieldValidator"/>
     <theContainedElements xsi:type="model.core:DesignPhase" id="5080d1a7-1359-4897-8749-4cfbd3cffcde" logicalName="Codelist" name="CodeList" kind="CodeList">
@@ -142,12 +144,12 @@
         <layoutConstraint xsi:type="notation:Location" x="-6" y="73"/>
       </children>
       <children xsi:type="notation:DecorationNode" type="6002">
-        <layoutConstraint xsi:type="notation:Location" x="-6" y="99"/>
+        <layoutConstraint xsi:type="notation:Location" x="5" y="108"/>
       </children>
       <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
       <bendpoints xsi:type="notation:RelativeBendpoints" points="[23, 5, -130, 0]$[127, 8, -26, 3]"/>
       <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.77,0.5066666666666667)"/>
-      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.2,0.5733333333333334)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.07692307692307693,0.5866666666666667)"/>
     </edges>
     <edges xsi:type="notation:Connector" type="4001" element="3cbac6f8-df9e-4f4a-a7d8-465fa3c57eb8" source="/1/@children.0" target="/1/@children.5">
       <children xsi:type="notation:DecorationNode" type="6001">

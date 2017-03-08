@@ -41,12 +41,12 @@ public class CommonFlowController {
     }
 
     @Generated("TERASOLUNA IDE")
-    @RequestMapping(value = "identity", method = { RequestMethod.POST })
+    @RequestMapping(value = "identity", method = { RequestMethod.GET })
     public String identity(CommonFlowForm form, Model model) {
         IdentityInputBean input = new IdentityInputBean();
-        input.setLicenseType(triAppHelper.map(form.getLicenseType(), String.class));
+        input.setLicenseType((Integer)model.asMap().get("licenseType"));
         IdentityOutputBean output = commonFlowService.identity(input);
-        form.setLicenseType(triAppHelper.map(output.getLicenseType(), Integer.class));
+        form.setLicenseType(output.getLicenseType());
         return "CommonFlow/P001";
     }
 
@@ -61,13 +61,13 @@ public class CommonFlowController {
         input.setPhone(form.getPhone());
         input.setEmail(form.getEmail());
         input.setAddress(form.getAddress());
-        input.setLicenseType(triAppHelper.map(form.getLicenseType(), String.class));
+        input.setLicenseType(form.getLicenseType());
         ReturncallerOutputBean output = commonFlowService.returncaller(input);
         form.setName(output.getName());
         form.setPhone(output.getPhone());
         form.setEmail(output.getEmail());
         form.setAddress(output.getAddress());
-        form.setLicenseType(triAppHelper.map(output.getLicenseType(), Integer.class));
+        form.setLicenseType(output.getLicenseType());
 
         sessionStatus.setComplete();
         return "forward:" + triAppHelper.getViewNameForContext((String) model.asMap().get("subflow.CommonFlowScreenFlow.caller")+"::Z002");

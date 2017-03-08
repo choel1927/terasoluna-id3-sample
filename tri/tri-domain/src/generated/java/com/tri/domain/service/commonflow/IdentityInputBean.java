@@ -21,13 +21,13 @@ public class IdentityInputBean implements Serializable {
      * License Type <br>
      *  
      */
-    private String licenseType;
+    private Integer licenseType;
 
     /** 
      * get License Type <br>
      * @return License Type  
      */
-    public String getLicenseType() {
+    public Integer getLicenseType() {
         return licenseType;
     }
 
@@ -35,7 +35,7 @@ public class IdentityInputBean implements Serializable {
      * set License Type <br>
      * @param licenseType  License Type  
      */
-    public void setLicenseType(String licenseType) {
+    public void setLicenseType(Integer licenseType) {
         this.licenseType = licenseType;
     }
 }

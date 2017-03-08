@@ -49,7 +49,7 @@ public class Example4Controller {
         InputidentityInputBean input = new InputidentityInputBean();
         input.setLicenseType(triAppHelper.map(form.getLicenseType(), Integer.class));
         InputidentityOutputBean output = example4Service.inputidentity(input);
-        form.setLicenseType(triAppHelper.map(output.getLicenseType(), Integer.class));
+        redirectAttributes.addFlashAttribute("licenseType", output.getLicenseType());
         redirectAttributes.addFlashAttribute("subflow.CommonFlowScreenFlow.caller", "Example4ScreenFlow::CF001");
         return "redirect:/CommonFlow/identity";
     }

@@ -22,12 +22,12 @@ public interface CommonFlowService {
      * @param input Service input
      * @return Service output
      */
-    IdentityOutputBean identity(IdentityInputBean input);
+    ReturncallerOutputBean returncaller(ReturncallerInputBean input);
 
     /** 
      * Execute online processing
      * @param input Service input
      * @return Service output
      */
-    ReturncallerOutputBean returncaller(ReturncallerInputBean input);
+    IdentityOutputBean identity(IdentityInputBean input);
 }

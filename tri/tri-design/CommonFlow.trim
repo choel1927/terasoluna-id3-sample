@@ -35,7 +35,7 @@
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="07ff228c-50b0-4477-acee-eb26f16139a8" logicalName="Action" name="ActionDefinition" kind="ActionDefinition">
       <theContainedElements xsi:type="model.action:Action" id="0b3fd77a-bd90-4de2-b47c-0a7013a47c58" logicalName="Identity Page" name="identity" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" theUsingBLogic="b4230c71-e31f-4474-9e09-ccb6d38be6c1" requestPath="identity" viewName="" theOwnerController="7e82cf2b-36a2-40b3-8955-6c0e8720f436">
-        <httpMethod>POST</httpMethod>
+        <httpMethod>GET</httpMethod>
       </theContainedElements>
       <theContainedElements xsi:type="model.action:Action" id="8f672ea0-27e7-4984-90d4-082cd3d3b483" logicalName="Return To Caller" name="returncaller" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" theUsingBLogic="b0019b76-c492-4218-9304-71b6f028a4ac" requestPath="returncaller" viewName="" completeSession="true" theOwnerController="7e82cf2b-36a2-40b3-8955-6c0e8720f436">
         <httpMethod>POST</httpMethod>
@@ -44,10 +44,10 @@
     <theContainedElements xsi:type="model.core:DesignPhase" id="f755ba2b-9ef5-41a5-80ed-52b2057907cd" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition">
       <theContainedElements xsi:type="model.action:BLogic" id="b4230c71-e31f-4474-9e09-ccb6d38be6c1" logicalName="Identity Page" name="Identity" theOwnerService="fdcf5972-3db8-4715-bae5-9703ff291b00">
         <theOwnedOutputBean id="aa16cc1c-7ebd-4e66-8e81-60eeb9fe8cb6" logicalName="Identity Page" name="IdentityOutputBean">
-          <theContainedElements xsi:type="model.scope:IOBeanField" id="a85643b0-b464-40d0-8c97-5b77839bcaaf" logicalName="License Type" name="licenseType" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="1a0482fc-9f32-43f5-9621-6bedc8b45372"/>
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="a85643b0-b464-40d0-8c97-5b77839bcaaf" logicalName="License Type" name="licenseType" aliasType="Integer" multiplicityType="DIRECT_INPUT" type="Integer" theRelatedScopeField="1a0482fc-9f32-43f5-9621-6bedc8b45372"/>
         </theOwnedOutputBean>
         <theOwnedInputBean id="934772f1-3d0c-47fd-9fe4-798055e324f3" logicalName="Identity Page" name="IdentityInputBean">
-          <theContainedElements xsi:type="model.scope:IOBeanField" id="ff409eee-eaa4-4545-9f4c-e2531be5f4da" logicalName="License Type" name="licenseType" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="1a0482fc-9f32-43f5-9621-6bedc8b45372"/>
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="94b40e53-86c2-470d-a7b4-959cc5550778" logicalName="License Type" name="licenseType" aliasType="Integer" type="Integer" theRelatedScopeField="1b058f29-2186-4c03-8355-7bceb5a32508"/>
         </theOwnedInputBean>
       </theContainedElements>
       <theContainedElements xsi:type="model.action:BLogic" id="b0019b76-c492-4218-9304-71b6f028a4ac" logicalName="Return To Caller" name="Returncaller" theOwnerService="fdcf5972-3db8-4715-bae5-9703ff291b00">
@@ -56,14 +56,14 @@
           <theContainedElements xsi:type="model.scope:IOBeanField" id="7bdac9ab-3bca-427e-8b15-5292d9508026" logicalName="Phone" name="phone" aliasType="String" type="String" theRelatedScopeField="e12c0604-414a-49e5-85db-eaf7ceed7868"/>
           <theContainedElements xsi:type="model.scope:IOBeanField" id="cd12e06f-31a0-439c-9b1e-6a27f0d9a4fa" logicalName="Email" name="email" aliasType="String" type="String" theRelatedScopeField="2053c29e-0875-4f8c-baec-e38990305bcb"/>
           <theContainedElements xsi:type="model.scope:IOBeanField" id="1ab67fc6-c3c7-41d0-b94c-38c89947f8e6" logicalName="Address" name="address" aliasType="String" type="String" theRelatedScopeField="9381e7b1-4da7-4166-ac36-cbefb528060a"/>
-          <theContainedElements xsi:type="model.scope:IOBeanField" id="8a4d51b4-e8bf-4883-bbd4-701edd76449b" logicalName="License Type" name="licenseType" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="1a0482fc-9f32-43f5-9621-6bedc8b45372"/>
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="8a4d51b4-e8bf-4883-bbd4-701edd76449b" logicalName="License Type" name="licenseType" aliasType="Integer" multiplicityType="DIRECT_INPUT" type="Integer" theRelatedScopeField="1a0482fc-9f32-43f5-9621-6bedc8b45372"/>
         </theOwnedOutputBean>
         <theOwnedInputBean id="267827a8-1acd-438b-a825-73170aea2ee7" logicalName="Return To Caller" name="ReturncallerInputBean">
           <theContainedElements xsi:type="model.scope:IOBeanField" id="0763a265-ed42-402b-a710-478f0bcc11d3" logicalName="Name" name="name" aliasType="String" type="String" theRelatedScopeField="bc40f6a9-a195-403c-99ca-3c8c588cdb08"/>
           <theContainedElements xsi:type="model.scope:IOBeanField" id="429204c6-f9f5-434b-b1d5-b930f59eda47" logicalName="Phone" name="phone" aliasType="String" type="String" theRelatedScopeField="e12c0604-414a-49e5-85db-eaf7ceed7868"/>
           <theContainedElements xsi:type="model.scope:IOBeanField" id="75c76803-da72-46b1-a193-620fe269217b" logicalName="Email" name="email" aliasType="String" type="String" theRelatedScopeField="2053c29e-0875-4f8c-baec-e38990305bcb"/>
           <theContainedElements xsi:type="model.scope:IOBeanField" id="ed5796df-a06e-481c-aa51-1e85db736bb8" logicalName="Address" name="address" aliasType="String" type="String" theRelatedScopeField="9381e7b1-4da7-4166-ac36-cbefb528060a"/>
-          <theContainedElements xsi:type="model.scope:IOBeanField" id="66985ab0-97a6-4596-8d4d-43ce365cac2d" logicalName="License Type" name="licenseType" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="1a0482fc-9f32-43f5-9621-6bedc8b45372"/>
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="66985ab0-97a6-4596-8d4d-43ce365cac2d" logicalName="License Type" name="licenseType" aliasType="Integer" multiplicityType="DIRECT_INPUT" type="Integer" theRelatedScopeField="1a0482fc-9f32-43f5-9621-6bedc8b45372"/>
         </theOwnedInputBean>
       </theContainedElements>
     </theContainedElements>
@@ -80,7 +80,9 @@
       <theContainedElements xsi:type="model.scope:Session" id="32d431c2-85a2-4878-a72e-6724782a91d5" logicalName="Session list" name="Session"/>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="b8d27f7d-e460-4d6e-82ae-65afdc125c55" logicalName="Request" name="Request" kind="RequestDefinition">
-      <theContainedElements xsi:type="model.scope:Request" id="251514bc-da95-45b1-8221-ef9871a72f42" logicalName="Request list" name="Request"/>
+      <theContainedElements xsi:type="model.scope:Request" id="251514bc-da95-45b1-8221-ef9871a72f42" logicalName="Request list" name="Request">
+        <theContainedElements xsi:type="model.scope:RequestKey" id="1b058f29-2186-4c03-8355-7bceb5a32508" logicalName="License Type" name="licenseType" aliasType="Integer" type="Integer"/>
+      </theContainedElements>
     </theContainedElements>
     <theContainedElements xsi:type="model.core:DesignPhase" id="4c0bd4d9-c71e-41dd-a1e0-ebf3a8ba4aa3" logicalName="Correlation item validation class" name="MultiFieldValidator" kind="MultiFieldValidator"/>
     <theContainedElements xsi:type="model.core:DesignPhase" id="d2672b87-b0d1-47ca-a5ea-a3576e0b30f3" logicalName="Codelist" name="CodeList" kind="CodeList"/>
