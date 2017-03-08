@@ -62,6 +62,7 @@
       <theContainedElements xsi:type="model.action:BLogic" id="99120004-27dc-4c0d-8178-8144691ce375" logicalName="Decision" name="Decision" theOwnerService="86c6c39b-0a10-4ba1-81c6-89f75d6ce877">
         <theOwnedOutputBean id="1dfbde40-fbe5-4bc0-be07-947ef9838fed" logicalName="Decision" name="DecisionOutputBean">
           <theContainedElements xsi:type="model.scope:IOBeanField" id="732986de-2ddc-4690-b726-5a7d486b018b" logicalName="Select Page" name="pageDropdown" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="444b327d-7f7e-486e-9b86-16944c4d4451"/>
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="805c8338-f04b-4b5c-8d33-4a6c635c69e3" logicalName="Decision Status" name="decisionStatus" aliasType="Boolean" type="Boolean"/>
         </theOwnedOutputBean>
         <theOwnedInputBean id="e86effc0-5307-4e0a-b223-fac8168d9ab1" logicalName="Decision" name="DecisionInputBean">
           <theContainedElements xsi:type="model.scope:IOBeanField" id="d9333b1f-9f09-4c92-83cc-48b12f247f84" logicalName="Select Page" name="pageDropdown" aliasType="String" multiplicityType="DIRECT_INPUT" type="String" theRelatedScopeField="444b327d-7f7e-486e-9b86-16944c4d4451"/>

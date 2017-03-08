@@ -38,4 +38,26 @@ public class DecisionOutputBean implements Serializable {
     public void setPageDropdown(String pageDropdown) {
         this.pageDropdown = pageDropdown;
     }
+
+    /** 
+     * Decision Status <br>
+     *  
+     */
+    private Boolean decisionStatus;
+
+    /** 
+     * get Decision Status <br>
+     * @return Decision Status  
+     */
+    public Boolean getDecisionStatus() {
+        return decisionStatus;
+    }
+
+    /** 
+     * set Decision Status <br>
+     * @param decisionStatus  Decision Status  
+     */
+    public void setDecisionStatus(Boolean decisionStatus) {
+        this.decisionStatus = decisionStatus;
+    }
 }

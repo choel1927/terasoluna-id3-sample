@@ -30,6 +30,8 @@
                 <value>Example1-messages</value>
                 <value>Example2-messages</value>
                 <value>Example3-messages</value>
+                <value>Example4-messages</value>
+                <value>CommonFlow-messages</value>
             </list>
         </property>
     </bean>

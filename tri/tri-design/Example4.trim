@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model.action="http:///model/action.ecore" xmlns:model.codelist="http:///model/codelist.ecore" xmlns:model.core="http:///model/core.ecore" xmlns:model.module="http:///model/module.ecore" xmlns:model.scope="http:///model/scope.ecore" xmlns:model.screendesign="http:///model/screendesign.ecore" xmlns:model.screenflow="http:///model/screenflow.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <model.module:ModuleRoot id="6c3da0bd-1eba-4247-a8b2-5506807bd679" logicalName="Example4" name="Example4" blogicGenFolder="/tri-web/src/main/java" domainBlogicGenFolder="/tri-domain/src/main/java" domainMsgsPropsFolder="/tri-domain/src/generated/resources" domainSqlMapFolder="/tri-domain/src/main/resources" domainSrcGenFolder="/tri-domain/src/generated/java" msgsPropsFolder="/tri-web/src/generated/resources" sqlMapFolder="/tri-web/src/main/resources" srcGenFolder="/tri-web/src/generated/java">
+    <theContainedElements xsi:type="model.screenflow:MainFlowDefinition" id="fb9b20ff-8016-4a68-9cd3-e47ecbae2d8c" logicalName="Example4Screen flow" name="Example4ScreenFlow">
+      <theContainedElements xsi:type="model.core:DiagramElement" id="f9298ca7-7d4e-4554-87ee-a870e528202a" name="Example4Screen flow"/>
+      <theContainedElements xsi:type="model.screenflow:ScreenFlowInvocation" id="fa284235-1517-441a-ac69-3d6023100f4e" logicalName="Common Flow" name="CF001">
+        <theOutgoingTransitions id="3cbac6f8-df9e-4f4a-a7d8-465fa3c57eb8" logicalName="Go To Decision Point" name="T003" exceptionClass="" theDestination="91b4d082-1164-4e82-ae44-7c9cd02b6562">
+          <theFinalNodeInCommonFlow href="CommonFlow.trim#6254ab40-b2f6-4a9d-b219-c4d864f06ed5" name="Z002" logicalName="End Point"/>
+        </theOutgoingTransitions>
+        <theMainFlowDefinition href="CommonFlow.trim#583e20c7-f336-4a9b-923c-93aa740a0fd5" name="CommonFlowScreenFlow" logicalName="CommonFlowScreen flow"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:InitialNode" id="dfbe3d26-9746-437d-b481-d05e1de43282" logicalName="Entry Point" name="Z001">
+        <theOutgoingTransitions id="c6a39661-f093-4b88-adbc-0d33865c6dac" logicalName="Go To Select License" name="T001" exceptionClass="" theActionSet="d2ce69b2-0998-4651-a6ec-ee06efcbf6eb" theDestination="ef768d4e-a6b7-4c24-b699-fe4ab95f288c"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="ef768d4e-a6b7-4c24-b699-fe4ab95f288c" logicalName="Select License Page" name="P001" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="3aa77bc5-ce00-41c4-ad92-518817a738d6" logicalName="License Type" name="F001">
+          <theContainedElements xsi:type="model.screendesign:ScreenItem" id="2b281f5b-057a-45fb-8769-4a5b8a5126c7" logicalName="LicenseType" name="licenseType" theRelatedScopeField="a941ca6f-d275-4d33-912c-53e853299b9d" appearanceType="DROPDOWN" theRelatedCodeList="fa4d5d75-87e1-4f40-b0e8-40eaada79628" triTagName="div" labelTagName="label">
+            <thePathOfBeanFieldUsages id="a1b3cae0-4521-4610-98cc-21e452573b50" theField="a941ca6f-d275-4d33-912c-53e853299b9d"/>
+          </theContainedElements>
+          <theContainedElements xsi:type="model.screendesign:ButtonLink" id="75746d72-8f9a-4177-b14d-d220e97a300f" logicalName="Input" name="input" theRelatedTransition="549501d1-a27f-4d48-8011-75991d7a9861" triTagName="div">
+            <thePageLinkTotal id="6a9c97d8-0f6f-47af-9a7f-539c0629466b"/>
+            <thePageLinkIndex id="a2f6f652-ca0c-4de6-ac93-78a5e5eb3691"/>
+            <thePageLinkRow id="1e921809-cca8-4d31-af02-8d448352f699"/>
+          </theContainedElements>
+        </theContainedElements>
+        <theOutgoingTransitions id="549501d1-a27f-4d48-8011-75991d7a9861" logicalName="Go To Common Flow" name="T002" exceptionClass="" theActionSet="9b3943f8-1751-4be6-af6f-38b5fd7dbb13" theDestination="fa284235-1517-441a-ac69-3d6023100f4e">
+          <theInitialNodeInCommonFlow href="CommonFlow.trim#635afbe7-1312-4785-a9c2-6db4882d6446" name="Z001" logicalName="Entry Point"/>
+        </theOutgoingTransitions>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="25be417e-09b0-46e9-9d81-aea34d025831" logicalName="Screen02" name="Page02" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="7ce2f500-dac1-41d2-95e1-9b7a655c543c" logicalName="Form01" name="Form01"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:Page" id="b6633282-a1d0-4140-a438-a7d505881597" logicalName="Screen03" name="Page03" errorMessageDisplayStyle="BULK">
+        <theContainedElements xsi:type="model.screendesign:Form" id="bb654783-1d0e-4919-9114-8e731dcdc822" logicalName="Form01" name="Form01"/>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.screenflow:DecisionNode" id="91b4d082-1164-4e82-ae44-7c9cd02b6562" logicalName="Decision Point" name="D001" theAction="1914a9ac-db50-4e67-951f-466ab8525e92">
+        <theOutgoingTransitions id="0b47b97b-c825-4fb2-b0aa-bbc6e060b629" logicalName="Go To B License Page" name="T004" exceptionClass="" theDestination="b6633282-a1d0-4140-a438-a7d505881597" transitionKind="CONDITION"/>
+        <theOutgoingTransitions id="2847b3ad-d113-4729-81eb-fb07623b29dc" logicalName="Go To A License Page" name="T005" exceptionClass="" theDestination="25be417e-09b0-46e9-9d81-aea34d025831" transitionKind="CONDITION"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="dbb995ab-08a7-4ce5-9254-8e1684904a9a" logicalName="Action" name="ActionDefinition" kind="ActionDefinition">
+      <theContainedElements xsi:type="model.action:Action" id="d2ce69b2-0998-4651-a6ec-ee06efcbf6eb" logicalName="Select License" name="inputlicense" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" requestPath="inputlicense" viewName="" theOwnerController="305a9624-0606-49d1-ac2f-07f1792b745c">
+        <httpMethod>GET</httpMethod>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:Action" id="9b3943f8-1751-4be6-af6f-38b5fd7dbb13" logicalName="Input Identity" name="inputidentity" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="REDIRECT" isSaveNewToken="false" theUsingBLogic="94ada5b8-d123-4b3e-8816-c7270c460ad7" requestPath="inputidentity" viewName="" theOwnerController="305a9624-0606-49d1-ac2f-07f1792b745c">
+        <httpMethod>POST</httpMethod>
+      </theContainedElements>
+      <theContainedElements xsi:type="model.action:Action" id="1914a9ac-db50-4e67-951f-466ab8525e92" logicalName="Decision" name="decision" actionBeanClass="jp.terasoluna.fw.web.struts.actions.AnnotationBLogicAction" actionType="FORWARD" isSaveNewToken="false" requestPath="decision" viewName="" theOwnerController="305a9624-0606-49d1-ac2f-07f1792b745c">
+        <httpMethod>POST</httpMethod>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="3a1f88f5-a013-4209-a579-67e050fb7b5e" logicalName="BLogic class" name="BLogicDefinition" kind="BLogicDefinition">
+      <theContainedElements xsi:type="model.action:BLogic" id="94ada5b8-d123-4b3e-8816-c7270c460ad7" logicalName="Input Identity" name="Inputidentity" theOwnerService="2239e1cc-223d-4815-a42b-3fecb5cea5f2">
+        <theOwnedOutputBean id="5f347313-3c35-4dbf-bc98-a2f589c0b067" logicalName="Input Identity" name="InputidentityOutputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="76936dca-8482-48e2-acf9-87ea4f9260d8" logicalName="LicenseType" name="licenseType" aliasType="Integer" type="Integer" theRelatedScopeField="a941ca6f-d275-4d33-912c-53e853299b9d"/>
+        </theOwnedOutputBean>
+        <theOwnedInputBean id="8f7a7c47-1723-4110-8df1-b9e0cc841162" logicalName="Input Identity" name="InputidentityInputBean">
+          <theContainedElements xsi:type="model.scope:IOBeanField" id="9789c12c-6a43-4d45-b84c-d8d0119077f8" logicalName="LicenseType" name="licenseType" aliasType="Integer" type="Integer" theRelatedScopeField="a941ca6f-d275-4d33-912c-53e853299b9d"/>
+        </theOwnedInputBean>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="bb6dc217-d8a3-40bc-8c16-5169be577aa6" logicalName="Action form" name="ActionForm" kind="ActionForm">
+      <theContainedElements xsi:type="model.scope:ActionFormClass" id="34fad636-6145-436f-9cca-3c239312763c" logicalName="Example4Form" name="Example4Form" isOptimizedActionForm="true" isRequestScope="true">
+        <theContainedElements xsi:type="model.scope:ActionFormField" id="a941ca6f-d275-4d33-912c-53e853299b9d" logicalName="LicenseType" name="licenseType" aliasType="Integer" multiplicityType="DIRECT_INPUT" type="Integer" formatType="NumberFormat" parameterName=""/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="0398f1ed-bbaa-4a07-bf6b-7a8fd3ec069f" logicalName="Session" name="Session" kind="SessionDefinition">
+      <theContainedElements xsi:type="model.scope:Session" id="b9ee4363-849a-487e-be8f-5aeea92bcfd2" logicalName="Session list" name="Session"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="a5c2af80-ba5a-468b-980c-bf637628292c" logicalName="Request" name="Request" kind="RequestDefinition">
+      <theContainedElements xsi:type="model.scope:Request" id="cea175ca-7561-46c9-ad40-3828fe492532" logicalName="Request list" name="Request"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="76713770-56a1-4291-875e-67b42148be7d" logicalName="Correlation item validation class" name="MultiFieldValidator" kind="MultiFieldValidator"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="5080d1a7-1359-4897-8749-4cfbd3cffcde" logicalName="Codelist" name="CodeList" kind="CodeList">
+      <theContainedElements xsi:type="model.codelist:MappedCodeList" id="fa4d5d75-87e1-4f40-b0e8-40eaada79628" logicalName="License Type" name="CL_LicenseType">
+        <theContainedElements xsi:type="model.codelist:MappedCodeListLiteral" id="1cfcdbb1-42ec-4895-9aa3-be2acdff854e" logicalName="Car License" name="1"/>
+        <theContainedElements xsi:type="model.codelist:MappedCodeListLiteral" id="da22935c-c428-40af-8bed-157702b551d2" logicalName="Bike License" name="2"/>
+      </theContainedElements>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="4e5d3a0c-486f-456e-8550-c1fb20d12d3d" logicalName="Message" name="MessageDefinition" kind="MessageDefinition"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="ab69850c-5c80-4ef0-9a43-efb4ef9407dc" logicalName="Java bean" name="JavaBeanDefinition" kind="JavaBean"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="bec6cea1-e435-43d0-a6e2-3baeb15abe6c" logicalName="DTO class" name="DTOClass" kind="DTOClass"/>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="be6f1da5-9560-470b-bc3f-3e67568b4ab0" logicalName="Controller" name="Controller" kind="Controller">
+      <theContainedElements xsi:type="model.action:Controller" id="305a9624-0606-49d1-ac2f-07f1792b745c" name="Example4Controller" theOwnedAction="d2ce69b2-0998-4651-a6ec-ee06efcbf6eb 9b3943f8-1751-4be6-af6f-38b5fd7dbb13 1914a9ac-db50-4e67-951f-466ab8525e92" theRelatedService="2239e1cc-223d-4815-a42b-3fecb5cea5f2"/>
+    </theContainedElements>
+    <theContainedElements xsi:type="model.core:DesignPhase" id="70fef21b-6ca1-40ca-978f-0a6e92712244" logicalName="Service" name="Service" kind="Service">
+      <theContainedElements xsi:type="model.action:Service" id="2239e1cc-223d-4815-a42b-3fecb5cea5f2" name="Example4Service" theOwnedBLogic="94ada5b8-d123-4b3e-8816-c7270c460ad7"/>
+    </theContainedElements>
+    <theProjectRoot href="tri.trip#1c3e6e59-2391-4212-b58f-609ea058ee8f" name="TriApp" logicalName="TriApplication"/>
+  </model.module:ModuleRoot>
+  <notation:Diagram type="IDE3_ModelID" element="fb9b20ff-8016-4a68-9cd3-e47ecbae2d8c" measurementUnit="Pixel">
+    <children xsi:type="notation:Shape" type="2007" element="fa284235-1517-441a-ac69-3d6023100f4e" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5009"/>
+      <children xsi:type="notation:DecorationNode" type="5010"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="552" y="240"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2005" element="dfbe3d26-9746-437d-b481-d05e1de43282" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5005">
+        <layoutConstraint xsi:type="notation:Location" x="-36" y="-24"/>
+      </children>
+      <layoutConstraint xsi:type="notation:Bounds" x="108" y="264"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="ef768d4e-a6b7-4c24-b699-fe4ab95f288c" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="324" y="240"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="25be417e-09b0-46e9-9d81-aea34d025831" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="912" y="36"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2003" element="b6633282-a1d0-4140-a438-a7d505881597" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5003"/>
+      <children xsi:type="notation:DecorationNode" type="5007"/>
+      <layoutConstraint xsi:type="notation:Bounds" x="912" y="444"/>
+    </children>
+    <children xsi:type="notation:Shape" type="2004" element="91b4d082-1164-4e82-ae44-7c9cd02b6562" fontName="Segoe UI">
+      <children xsi:type="notation:DecorationNode" type="5004">
+        <layoutConstraint xsi:type="notation:Location" x="60" y="-12"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="5008">
+        <layoutConstraint xsi:type="notation:Location" x="60" y="12"/>
+      </children>
+      <layoutConstraint xsi:type="notation:Bounds" x="828" y="252"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle"/>
+    <edges xsi:type="notation:Connector" type="4001" element="c6a39661-f093-4b88-adbc-0d33865c6dac" source="/1/@children.1" target="/1/@children.2">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-16" y="69"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-6" y="96"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[20, 6, -142, 0]$[148, 9, -14, 3]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9,0.45)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.02,0.6133333333333333)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="549501d1-a27f-4d48-8011-75991d7a9861" source="/1/@children.2" target="/1/@children.0">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-6" y="73"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-6" y="99"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[23, 5, -130, 0]$[127, 8, -26, 3]"/>
+      <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.77,0.5066666666666667)"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.2,0.5733333333333334)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="3cbac6f8-df9e-4f4a-a7d8-465fa3c57eb8" source="/1/@children.0" target="/1/@children.5">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="17" y="35"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="1" y="30"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[65, -6, -166, -1]$[211, -6, -20, -1]"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="0b47b97b-c825-4fb2-b0aa-bbc6e060b629" source="/1/@children.5" target="/1/@children.4">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="10"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="30"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[5, 20, -30, -109]$[35, 124, 0, -5]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.55,0.06666666666666667)"/>
+    </edges>
+    <edges xsi:type="notation:Connector" type="4001" element="2847b3ad-d113-4729-81eb-fb07623b29dc" source="/1/@children.5" target="/1/@children.3">
+      <children xsi:type="notation:DecorationNode" type="6001">
+        <layoutConstraint xsi:type="notation:Location" x="-9" y="3"/>
+      </children>
+      <children xsi:type="notation:DecorationNode" type="6002">
+        <layoutConstraint xsi:type="notation:Location" x="-28" y="10"/>
+      </children>
+      <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+      <bendpoints xsi:type="notation:RelativeBendpoints" points="[9, -20, -93, 167]$[52, -180, -50, 7]"/>
+      <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.53,0.96)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

@@ -43,15 +43,14 @@ public class Example3Controller {
 
     @Inject
     Example3Service example3Service;
-
-    @Generated("TERASOLUNA IDE")
+    
     @RequestMapping(value = "decision", method = { RequestMethod.POST })
     public String decision(Example3Form form, Model model) {
         DecisionInputBean input = new DecisionInputBean();
         input.setPageDropdown(form.getPageDropdown());
         DecisionOutputBean output = example3Service.decision(input);
         form.setPageDropdown(output.getPageDropdown());
-        if (false) {
+        if (output.getDecisionStatus()) {
             return "Example3/P003";
         }
         return "Example3/P002";

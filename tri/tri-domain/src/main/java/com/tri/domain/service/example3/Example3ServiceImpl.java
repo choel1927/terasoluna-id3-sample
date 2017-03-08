@@ -24,9 +24,11 @@ public class Example3ServiceImpl implements Example3Service {
         switch (page) {
         	case PAGE_ONE:
         		output.setPageDropdown("THIS IS PAGE ONE");
+        		output.setDecisionStatus(false);
         		break;
         	case PAGE_TWO:
         		output.setPageDropdown("THIS IS PAGE TWO");
+        		output.setDecisionStatus(true);
         		break;
         }
         
